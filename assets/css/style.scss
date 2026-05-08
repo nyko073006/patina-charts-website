@@ -96,6 +96,8 @@ body.hero-ready .hero-anim { opacity: 1; transform: none; }
   padding: 0 1.5rem 5rem;
   overflow: hidden;
   background-color: var(--paper);
+  perspective: 2400px;
+  perspective-origin: 50% 25%;
 }
 
 .device-section::before {
@@ -123,6 +125,24 @@ body.hero-ready .hero-anim { opacity: 1; transform: none; }
     0 60px 130px -30px rgba(14, 22, 34, 0.32),
     0 20px 50px -12px rgba(14, 22, 34, 0.18),
     inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  transform-style: preserve-3d;
+}
+
+/* Float-in start state for the iPad — tilted, lifted */
+.device-mockup.float-in {
+  transform: translateY(90px) scale(0.96) rotateX(14deg) rotateY(-10deg);
+}
+
+/* Resting tilt — subtle, like a magazine product shot */
+.device-mockup.float-in.is-revealed {
+  transform: translateY(0) scale(1) rotateX(4deg) rotateY(-7deg);
+}
+
+@media (max-width: 720px) {
+  /* On phone the perspective tilt looks weird — keep it flat */
+  .device-mockup.float-in.is-revealed {
+    transform: translateY(0) scale(1) rotateX(0) rotateY(0);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
