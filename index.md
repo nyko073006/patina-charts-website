@@ -8,7 +8,7 @@ layout: default
 <section class="hero">
   <div class="hero-inner">
     <div class="eyebrow">iPad-Beratungstool für Vermittler</div>
-    <h1>Im Beratungstermin den Vergleich gewinnen — statt ihn zu erklären.</h1>
+    <h1>Im Beratungstermin den Vergleich gewinnen.</h1>
     <p class="lead">Patina Charts vergleicht ETF-Sparpläne mit fondsgebundenen Rentenversicherungen — vor Steuer, nach Steuer, mit Halbeinkünfteverfahren und Vorabpauschale. Über 30 deutsche Tarife sind hinterlegt. Drei Eingaben vom Mandanten, neunzig Sekunden, IDD-konforme PDF im Mail-Entwurf.</p>
     <div class="hero-actions">
       <a href="{{ site.download_url }}" class="btn-primary">{{ site.download_label }}</a>
