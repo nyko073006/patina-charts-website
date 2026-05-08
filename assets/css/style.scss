@@ -165,10 +165,12 @@ body.hero-ready .hero-anim { opacity: 1; transform: none; }
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
 }
 
-.device-screen svg {
+.device-screen svg,
+.device-screen img {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
 }
 
 @media (max-width: 640px) {
