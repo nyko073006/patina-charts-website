@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'de' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="theme-color" content="#27374F" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131C2A" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://patinacharts.de{{ page.url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="{% if page.home %}home{% endif %}">
+  <header class="site-nav">
+    <a href="{{ '/' | relative_url }}" class="brand">Patina Charts</a>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Patina Charts</span>
+      <nav>
+        <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+        <a href="{{ '/privacy/' | relative_url }}">Datenschutz</a>
+        <a href="{{ '/support/' | relative_url }}">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
