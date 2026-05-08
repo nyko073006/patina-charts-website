@@ -65,16 +65,14 @@ Tarif-DB-Updates und Login brauchen Internet.
 Verantwortlich für Inhalt und Betrieb:
 
 **Niklas Julian Humplik**
-Hermann-Lons-Straße 10
+Hermann-Löns-Straße 10
 89537 Giengen an der Brenz
 Deutschland
 
 E-Mail: niklashumplik@gmail.com
 
-## Beschwerdewege
+Vollständige Anbieterangaben siehe [Impressum](../impressum/).
 
-Bei Beschwerden zu Versicherungsvergleichen oder Beratungsdokumentationen:
-- **Versicherungsombudsmann e.V.** — Postfach 080632, 10006 Berlin —
-  [versicherungsombudsmann.de](https://www.versicherungsombudsmann.de)
-- **Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin)** — Graurheindorfer
-  Str. 108, 53117 Bonn — [bafin.de](https://www.bafin.de)
+---
+
+[Startseite](../) · [Impressum](../impressum/) · [Datenschutz](../privacy/)

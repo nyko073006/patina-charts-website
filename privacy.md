@@ -13,7 +13,7 @@ personenbezogener Daten bei Nutzung der Patina-Charts-iOS-App.
 ## 1. Verantwortlicher
 
 **Niklas Julian Humplik**
-Hermann-Lons-Straße 10
+Hermann-Löns-Straße 10
 89537 Giengen an der Brenz
 Deutschland
 
@@ -74,6 +74,17 @@ jedem Web-Request).
 
 **Empfänger:** GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.
 GitHub bietet ein DSGVO-konformes DPA an.
+
+### 2.6 Kein Tracking, kein Analytics
+
+Die App nutzt **kein Tracking**, kein Analytics-SDK (Firebase, Mixpanel, Amplitude o.Ä.),
+keinen Werbe-Identifier (IDFA) und keine Crash-Reporter mit personenbezogenem Bezug.
+Eine App-Tracking-Transparency-Abfrage (ATT) entfällt daher.
+
+### 2.7 Zielgruppe / Altersgrenze
+
+Die App richtet sich ausschließlich an gewerbliche Versicherungs- und Finanzberater
+(B2B). Sie ist nicht für Personen unter 18 Jahren bestimmt.
 
 ## 3. Auftragsverarbeiter
 
@@ -136,3 +147,7 @@ Lautenschlagerstraße 20
 
 Wir passen diese Erklärung an, wenn sich Funktionen oder rechtliche Anforderungen
 ändern. Die jeweils aktuelle Fassung findest du unter dieser URL.
+
+---
+
+[Startseite](../) · [Impressum](../impressum/) · [Support](../support/)

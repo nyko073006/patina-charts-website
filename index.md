@@ -53,5 +53,6 @@ Fragen? Bug-Reports? Feature-Wünsche?
 
 ## Rechtliches
 
+- [Impressum](impressum/)
 - [Datenschutzerklärung](privacy/)
 - [Support](support/)
