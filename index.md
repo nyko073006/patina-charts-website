@@ -11,6 +11,11 @@ ETF-Sparpläne gegen fondsgebundene Rentenversicherungen vergleichen — mit ech
 deutscher Steuermathematik, IDD-konformer PDF-Dokumentation und Live-Tarif-
 Datenbank. Gemacht für die Beratung im Kundengespräch.
 
+<div class="cta-block" markdown="0">
+  <a href="{{ site.download_url }}" class="cta-button">{{ site.download_label }}</a>
+  <p class="cta-subtext">{{ site.download_subtext }}</p>
+</div>
+
 ## Was die App kann
 
 - **Live-Vergleich ETF vs. Fondspolice** mit Halbeinkünfteverfahren, Vorabpauschale,
@@ -40,11 +45,6 @@ Datenbank. Gemacht für die Beratung im Kundengespräch.
 
 **14 Tage kostenlos testen** — danach automatisches Abo, jederzeit kündbar in den
 Apple-ID-Einstellungen.
-
-## Download
-
-[Im App Store herunterladen](https://apps.apple.com/de/app/patina-charts/) *(verfügbar
-nach Release)*
 
 ## Support
 
