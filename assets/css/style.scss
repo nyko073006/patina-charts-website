@@ -1,0 +1,200 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* =========================================================================
+   Patina Charts Brand Override (über Cayman-Theme)
+   Light/Dark synchron mit der iOS-App:
+     Primary  Heritage Navy   #27374F  /  #6E89B5 (dark)
+     Accent   Apfelgrün       #2A9445  /  #4DBE6A (dark)
+     Highlight Bernstein      #F68426
+     Surface  #F9F9F9 / #0E0F12 (dark)
+   ========================================================================= */
+
+:root {
+  --pc-primary: #27374F;
+  --pc-primary-dark: #18243A;
+  --pc-accent: #2A9445;
+  --pc-accent-soft: rgba(42, 148, 69, 0.12);
+  --pc-highlight: #F68426;
+  --pc-surface: #F9F9F9;
+  --pc-card: #FFFFFF;
+  --pc-text: #1C1E22;
+  --pc-text-muted: #586071;
+  --pc-outline: #C3C5D9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pc-primary: #6E89B5;
+    --pc-primary-dark: #48608A;
+    --pc-accent: #4DBE6A;
+    --pc-accent-soft: rgba(77, 190, 106, 0.16);
+    --pc-highlight: #FF9D4D;
+    --pc-surface: #0E0F12;
+    --pc-card: #1C1E22;
+    --pc-text: #ECEEF2;
+    --pc-text-muted: #8B95A8;
+    --pc-outline: #3C3E46;
+  }
+}
+
+/* ---- Body ---- */
+body {
+  background-color: var(--pc-surface);
+  color: var(--pc-text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+               "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---- Hero / Page-Header ---- */
+.page-header {
+  background-color: var(--pc-primary);
+  background-image: linear-gradient(135deg, var(--pc-primary) 0%, var(--pc-primary-dark) 100%);
+  padding: 4rem 2rem;
+}
+
+.project-name {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.project-tagline {
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+/* ---- Buttons ---- */
+.btn {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.btn:hover {
+  background-color: var(--pc-accent);
+  border-color: var(--pc-accent);
+  color: #FFFFFF;
+}
+
+/* ---- Main content ---- */
+.main-content {
+  background-color: var(--pc-card);
+  color: var(--pc-text);
+  max-width: 60rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-content {
+    background-color: var(--pc-card);
+  }
+}
+
+/* ---- Headlines ---- */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+  color: var(--pc-primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.main-content h1 { border-bottom: 1px solid var(--pc-outline); padding-bottom: 0.4em; }
+
+/* ---- Links ---- */
+.main-content a {
+  color: var(--pc-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.main-content a:hover {
+  border-bottom-color: var(--pc-accent);
+  text-decoration: none;
+}
+
+/* ---- Tables ---- */
+.main-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2rem 0;
+}
+
+.main-content table th {
+  background-color: var(--pc-accent-soft);
+  color: var(--pc-primary);
+  font-weight: 600;
+  border: 1px solid var(--pc-outline);
+}
+
+.main-content table td {
+  border: 1px solid var(--pc-outline);
+  color: var(--pc-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-content table th,
+  .main-content table td {
+    background-color: transparent;
+  }
+  .main-content table th {
+    background-color: var(--pc-accent-soft);
+  }
+}
+
+/* ---- Code / Pre ---- */
+.main-content code,
+.main-content pre {
+  background-color: var(--pc-accent-soft);
+  color: var(--pc-primary);
+  border-radius: 4px;
+}
+
+.main-content pre {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--pc-outline);
+  background-color: var(--pc-surface);
+}
+
+.main-content pre code {
+  background: transparent;
+  color: var(--pc-text);
+}
+
+/* ---- Blockquotes / Lists ---- */
+.main-content blockquote {
+  border-left: 3px solid var(--pc-accent);
+  background-color: var(--pc-accent-soft);
+  color: var(--pc-text);
+  padding: 0.6rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.main-content hr {
+  border: 0;
+  border-top: 1px solid var(--pc-outline);
+  margin: 2.4rem 0;
+}
+
+/* ---- Site Footer (Cayman default) ---- */
+.site-footer {
+  border-top: 1px solid var(--pc-outline);
+  color: var(--pc-text-muted);
+}
+
+.site-footer-credits {
+  color: var(--pc-text-muted);
+}
+
+/* ---- Strong/em emphasis matches Brand ---- */
+.main-content strong { color: var(--pc-primary); font-weight: 600; }
+
+/* ---- Hide auto-generated "View on GitHub" button (Marketing-Seite) ---- */
+.page-header .btn[href*="github.com"] { display: none; }
+
