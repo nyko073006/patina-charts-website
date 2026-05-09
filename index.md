@@ -26,7 +26,7 @@ layout: default
 <section class="device-section">
   <div class="device-mockup float-in">
     <div class="device-screen">
-      <img src="{{ '/assets/screenshots/login.jpg' | relative_url }}" alt="Patina Charts Login-Ansicht auf dem iPad mit Live-Vergleichs-Chart ETF gegen Fondspolice" loading="lazy" width="1600" height="1102">
+      <img src="{{ '/assets/screenshots/login.jpg' | relative_url }}" alt="Patina Charts Login-Ansicht auf dem iPad Pro 13″ mit Live-Vergleichs-Chart ETF gegen Fondspolice" loading="lazy" width="1600" height="1200">
     </div>
   </div>
 </section>
