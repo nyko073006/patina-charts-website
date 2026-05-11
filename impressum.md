@@ -1,6 +1,7 @@
 ---
 title: Impressum — Patina Charts
 layout: default
+permalink: /impressum/
 ---
 
 # Impressum

@@ -1,6 +1,7 @@
 ---
 title: Support — Patina Charts
 layout: default
+permalink: /support/
 ---
 
 # Support

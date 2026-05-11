@@ -1,6 +1,7 @@
 ---
 title: Datenschutzerklärung — Patina Charts
 layout: default
+permalink: /privacy/
 ---
 
 # Datenschutzerklärung
