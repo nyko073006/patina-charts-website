@@ -7,6 +7,6 @@ lang: de
 # Beispiele:
 #   download_url: https://testflight.apple.com/join/XXXXXXXX
 #   download_url: https://apps.apple.com/de/app/patina-charts/idXXXXXXXXX
-download_url: "mailto:niklashumplik@gmail.com?subject=Beta-Tester%20f%C3%BCr%20Patina%20Charts&body=Hallo%20Niklas%2C%0A%0Aich%20m%C3%B6chte%20als%20Beta-Tester%20f%C3%BCr%20Patina%20Charts%20dabei%20sein.%0A%0AName%3A%20%0AFirma%20%2F%20T%C3%A4tigkeit%3A%20%0AAppleID-E-Mail%20%28f%C3%BCr%20TestFlight-Einladung%29%3A%20%0A%0AViele%20Gr%C3%BC%C3%9Fe"
-download_label: "Beta-Tester werden"
-download_subtext: "TestFlight-Einladung per E-Mail – kostenlos, jederzeit kündbar"
+download_url: "https://testflight.apple.com/join/MnfSfNm2"
+download_label: "Beta via TestFlight starten"
+download_subtext: "Direkt-Einladung über Apple TestFlight – kostenlos, jederzeit kündbar"
