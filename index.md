@@ -106,36 +106,83 @@ layout: default
 <section class="section section-alt" id="preise">
   <div class="section-inner">
     <h2 class="center">Preise</h2>
-    <p class="section-lead center">Vierzehn Tage kostenlos. Abo läuft über die Apple-ID, jederzeit kündbar in den iOS-Einstellungen.</p>
-    <div class="pricing">
+    <p class="section-lead center">Vierzehn Tage kostenlos testen. Alle Preise netto, monatliche oder jährliche Abrechnung mit zwei Monaten Rabatt.</p>
+    <div class="pricing pricing-3col">
       <div class="tier">
         <div class="tier-name">Basis</div>
         <div class="tier-price">49 € <small>/ Monat</small></div>
+        <div class="tier-price-secondary">oder 490 € jährlich · zwei Monate sparen</div>
         <div class="tier-tag">Für freie Vermittler im Tagesgeschäft.</div>
         <ul>
           <li>Strategie-Vergleich ETF vs. Fondspolice</li>
-          <li>PDF-Export</li>
-          <li>Stress-Test</li>
-          <li>Bis 25 Mandanten</li>
+          <li>Über 30 deutsche Tarife</li>
+          <li>PDF-Export, IDD-konform</li>
+          <li>Stress-Test in drei Szenarien</li>
+          <li>Bis zu 50 Mandanten</li>
+          <li>Apple-Kalender-Integration</li>
         </ul>
         <a href="{{ site.download_url }}" class="btn-secondary">14 Tage testen</a>
       </div>
       <div class="tier featured">
+        <div class="tier-badge">Empfohlen</div>
         <div class="tier-name">Professional</div>
         <div class="tier-price">99 € <small>/ Monat</small></div>
+        <div class="tier-price-secondary">oder 990 € jährlich · zwei Monate sparen</div>
         <div class="tier-tag">Für Strukturvertriebe und Beratungsbüros.</div>
         <ul>
           <li>Alles aus Basis</li>
-          <li>IDD-Statusinformation §11 VersVermV</li>
-          <li>Eigenes Branding</li>
-          <li>Multi-Tarif-Vergleich</li>
-          <li>Multi-Berater-Account</li>
           <li>Unbegrenzte Mandanten</li>
+          <li>Multi-Tarif-Vergleich in einem Lauf</li>
+          <li>Eigenes Branding in PDF-Protokollen</li>
+          <li>Multi-Berater-Account</li>
+          <li>Prioritäts-Support</li>
         </ul>
         <a href="{{ site.download_url }}" class="btn-primary">14 Tage testen</a>
       </div>
+      <div class="tier founder">
+        <div class="tier-badge tier-badge-amber">Limitiert</div>
+        <div class="tier-name">Founder Member</div>
+        <div class="tier-price">24,50 € <small>/ Monat</small></div>
+        <div class="tier-price-secondary">50 % Lebenslangrabatt auf Basis · nur erste 20 Berater</div>
+        <div class="tier-tag">Für Anker-Berater der ersten Stunde.</div>
+        <ul>
+          <li>Alle Funktionen aus Basis</li>
+          <li>50 % Rabatt — lebenslang</li>
+          <li>Direkter Draht zur Entwicklung</li>
+          <li>Früher Zugang zu neuen Features</li>
+          <li>Limitiert auf 20 Plätze</li>
+        </ul>
+        <a href="mailto:niklashumplik@gmail.com?subject=Founder%20Member%20-%20Patina%20Charts" class="btn-secondary">Founder-Status anfragen</a>
+      </div>
     </div>
-    <p class="pricing-note">Beide Tier mit gleichem 14-Tage-Test. Wechsel zwischen Basis und Professional jederzeit möglich.</p>
+    <p class="pricing-note">Die Testphase startet automatisch bei Installation. Kündigung jederzeit zum Ende der laufenden Abrechnungsperiode möglich.</p>
+  </div>
+</section>
+
+<section class="section" id="datenschutz">
+  <div class="section-inner">
+    <h2 class="center">Datenschutz, der mitgedacht ist.</h2>
+    <p class="section-lead center">Mandantendaten gehören zu deinem Kunden — und sie sollen auf deinem iPad bleiben.</p>
+    <div class="dsgvo-grid">
+      <div class="dsgvo-text">
+        <p>Patina Charts ist als iPad-native App entwickelt. <strong>Alle Mandantendaten verbleiben ausschließlich auf deinem Gerät</strong>, verschlüsselt in der iOS-Sandbox. Sie verlassen das Gerät zu keinem Zeitpunkt — es sei denn, du aktivierst Team-Sync explizit für eine Geschäftsstelle.</p>
+        <p>Daraus folgt für dich: <strong>kein Auftragsverarbeitungsvertrag</strong> nach Art. 28 DSGVO mit uns für Mandantendaten erforderlich. Das ist im DSGVO-bewussten Vermittlungsalltag ein spürbarer Vorteil — und unterscheidet die App von browserbasierten Beratungstools.</p>
+      </div>
+      <div class="comparison-card">
+        <div class="comparison-h">Im Vergleich</div>
+        <table class="comparison-table">
+          <thead>
+            <tr><th></th><th class="hl">Patina Charts</th><th>Web-Tools</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Mandantendaten</td><td class="hl">Lokal auf iPad</td><td>Auf Anbieter-Server</td></tr>
+            <tr><td>AVV-Pflicht</td><td class="hl">Nicht erforderlich</td><td>Erforderlich</td></tr>
+            <tr><td>DSGVO-Aufwand</td><td class="hl">Minimal</td><td>Vertraglich + technisch</td></tr>
+            <tr><td>Offline-Nutzung</td><td class="hl">Vollständig</td><td>Nicht möglich</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -164,8 +211,20 @@ layout: default
         <p>Aktuell iPad-only. Die App nutzt nativ iPadOS-Features (Apple Pencil, EventKit, StoreKit) und ist für die Beratung im persönlichen Termin optimiert. Eine iPhone-Version ist in Planung, eine Web-Version nicht.</p>
       </details>
       <details>
+        <summary>Wie aktiviere ich meine Lizenz nach dem Kauf?</summary>
+        <p>Nach der Zahlung erhältst du eine E-Mail mit deinem Aktivierungscode. Diesen gibst du in der App unter „Lizenz aktivieren" zusammen mit deiner E-Mail-Adresse ein. Sofort freigeschaltet, kein Cloud-Login nötig.</p>
+      </details>
+      <details>
+        <summary>Welche Rechtsgrundlage hat die App? Ist sie IDD-konform?</summary>
+        <p>Patina Charts ist eine Berechnungs- und Visualisierungssoftware, keine Anlage-, Steuer- oder Versicherungsberatung. Die erstellten Vergleiche sind unverbindliche Modellrechnungen, die als Anlage zu deiner eigenen Beratung dienen. Die Protokoll-PDFs sind so strukturiert, dass sie als Dokumentation gemäß IDD-Beratungspflichten (§11 VersVermV) verwendet werden können.</p>
+      </details>
+      <details>
         <summary>Wie kündige ich mein Abo?</summary>
-        <p>Über die Apple-ID-Einstellungen: <em>iPhone/iPad → Einstellungen → [dein Name] → Abonnements → Patina Charts → Abo beenden</em>. Das Abo läuft bis zum Ende der laufenden Periode weiter, danach wechselt die App in den Read-Only-Modus.</p>
+        <p>Direkt-Abo (Stripe): Über den Self-Service-Link aus deiner Bestätigungs-E-Mail, jederzeit zum Ende der laufenden Periode. App-Store-Abo: <em>iPhone/iPad → Einstellungen → [dein Name] → Abonnements → Patina Charts → Abo beenden</em>. Nach Kündigung wechselt die App in den Read-Only-Modus — deine Mandantendaten bleiben erhalten, du kannst jederzeit reaktivieren.</p>
+      </details>
+      <details>
+        <summary>Bietet ihr Schulungen für Geschäftsstellen?</summary>
+        <p>Für Geschäftsstellen mit fünf oder mehr Beratern bieten wir kostenlose 60-Minuten-Onboarding-Calls an. Schreib uns kurz an <a href="mailto:niklashumplik@gmail.com?subject=Onboarding-Call%20Geschäftsstelle">niklashumplik@gmail.com</a>.</p>
       </details>
     </div>
   </div>

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E1622" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -31,7 +32,7 @@
 (function(){
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   document.addEventListener('DOMContentLoaded', function(){
-    var sel = '.feature, .timeline-step, .tier, .faq details, .section h2, .section .section-lead, .cta-banner, .device-mockup';
+    var sel = '.feature, .timeline-step, .tier, .faq details, .section h2, .section .section-lead, .cta-banner, .device-mockup, .dsgvo-text, .comparison-card';
     var els = document.querySelectorAll(sel);
     var groups = new Map();
     els.forEach(function(el){
@@ -78,6 +79,7 @@
     <nav class="primary-nav">
       <a href="{{ '/' | relative_url }}#funktionen">Funktionen</a>
       <a href="{{ '/' | relative_url }}#preise">Preise</a>
+      <a href="{{ '/' | relative_url }}#datenschutz">Datenschutz</a>
       <a href="{{ '/' | relative_url }}#faq">FAQ</a>
     </nav>
     <a href="{{ site.download_url }}" class="nav-cta">{{ site.download_label }}</a>
@@ -104,6 +106,7 @@
       <div class="footer-h">Rechtliches</div>
       <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
       <a href="{{ '/privacy/' | relative_url }}">Datenschutz</a>
+      <a href="{{ '/agb/' | relative_url }}">AGB</a>
       <a href="{{ '/support/' | relative_url }}">Support</a>
     </div>
   </div>

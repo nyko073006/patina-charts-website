@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+Disallow: /aktivierung-erfolgreich/
+
+Sitemap: https://patinacharts.de/sitemap.xml
