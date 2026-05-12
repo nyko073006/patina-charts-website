@@ -18,7 +18,7 @@ Hermann-Löns-Straße 10
 89537 Giengen an der Brenz
 Deutschland
 
-E-Mail: niklashumplik@gmail.com
+E-Mail: nyko@patinasouthside.de
 
 ## 2. Welche Daten werden verarbeitet
 
@@ -131,7 +131,7 @@ Nach Art. 15–22 DSGVO hast du das Recht auf:
 - **Widerruf** erteilter Einwilligungen (z.B. Kalender-Zugriff) — gilt für die
   Zukunft, beeinträchtigt nicht die Rechtmäßigkeit bisheriger Verarbeitung
 
-Zur Ausübung dieser Rechte: schreib an **niklashumplik@gmail.com**.
+Zur Ausübung dieser Rechte: schreib an **nyko@patinasouthside.de**.
 
 ## 6. Beschwerderecht
 

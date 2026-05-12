@@ -152,7 +152,7 @@ layout: default
           <li>Früher Zugang zu neuen Features</li>
           <li>Limitiert auf 20 Plätze</li>
         </ul>
-        <a href="mailto:niklashumplik@gmail.com?subject=Founder%20Member%20-%20Patina%20Charts" class="btn-secondary">Founder-Status anfragen</a>
+        <a href="mailto:nyko@patinasouthside.de?subject=Founder%20Member%20-%20Patina%20Charts" class="btn-secondary">Founder-Status anfragen</a>
       </div>
     </div>
     <p class="pricing-note">Die Testphase startet automatisch bei Installation. Kündigung jederzeit zum Ende der laufenden Abrechnungsperiode möglich.</p>
@@ -224,7 +224,7 @@ layout: default
       </details>
       <details>
         <summary>Bietet ihr Schulungen für Geschäftsstellen?</summary>
-        <p>Für Geschäftsstellen mit fünf oder mehr Beratern bieten wir kostenlose 60-Minuten-Onboarding-Calls an. Schreib uns kurz an <a href="mailto:niklashumplik@gmail.com?subject=Onboarding-Call%20Geschäftsstelle">niklashumplik@gmail.com</a>.</p>
+        <p>Für Geschäftsstellen mit fünf oder mehr Beratern bieten wir kostenlose 60-Minuten-Onboarding-Calls an. Schreib uns kurz an <a href="mailto:nyko@patinasouthside.de?subject=Onboarding-Call%20Geschäftsstelle">nyko@patinasouthside.de</a>.</p>
       </details>
     </div>
   </div>

@@ -17,7 +17,7 @@ Deutschland
 
 ## Kontakt
 
-E-Mail: niklashumplik@gmail.com
+E-Mail: nyko@patinasouthside.de
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 

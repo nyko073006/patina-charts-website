@@ -51,6 +51,6 @@ noindex: true
   <div class="cta-banner">
     <h2>Keine E-Mail erhalten?</h2>
     <p>Prüfe zunächst deinen Spam-Ordner. Wenn nach 15 Minuten nichts angekommen ist, melde dich kurz — wir kümmern uns sofort.</p>
-    <a href="mailto:niklashumplik@gmail.com?subject=Aktivierungscode%20fehlt" class="btn-primary">Support kontaktieren</a>
+    <a href="mailto:nyko@patinasouthside.de?subject=Aktivierungscode%20fehlt" class="btn-primary">Support kontaktieren</a>
   </div>
 </section>

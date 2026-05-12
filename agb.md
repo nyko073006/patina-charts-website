@@ -83,7 +83,7 @@ Abrechnungszeitraum, sofern es nicht zum Ende der laufenden Periode
 gekündigt wird. Die Kündigung erfolgt:
 
 - **Bei Direkt-Abo (Stripe):** Über den Self-Service-Link aus der
-  Bestätigungs-E-Mail oder per E-Mail an niklashumplik@gmail.com.
+  Bestätigungs-E-Mail oder per E-Mail an nyko@patinasouthside.de.
 - **Bei App-Store-Abo:** Über die Apple-ID-Einstellungen auf dem
   iPad oder iPhone.
 

@@ -11,7 +11,7 @@ gibt's drei Wege, uns zu erreichen.
 
 ## Direktkontakt per E-Mail
 
-**niklashumplik@gmail.com**
+**nyko@patinasouthside.de**
 
 Antwortzeit: bei Basis-Abo innerhalb von 3 Werktagen, bei Professional-Abo innerhalb
 von 24 Stunden.
@@ -70,7 +70,7 @@ Hermann-Löns-Straße 10
 89537 Giengen an der Brenz
 Deutschland
 
-E-Mail: niklashumplik@gmail.com
+E-Mail: nyko@patinasouthside.de
 
 Vollständige Anbieterangaben siehe [Impressum](../impressum/).
 
