@@ -754,13 +754,26 @@ body {
 .enterprise-banner {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
-  margin-top: 2.5rem;
-  padding: 2rem 2.2rem;
-  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+  margin-top: 4.5rem;
+  padding: 2.2rem 2.4rem;
+  background-color: var(--paper);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--primary);
   border-radius: var(--radius-lg);
-  color: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.enterprise-banner:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--rule-strong);
+  border-left-color: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  .enterprise-banner { background-color: var(--paper-2); }
 }
 
 .enterprise-eyebrow {
@@ -768,20 +781,20 @@ body {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 0.4rem;
+  color: var(--ink-3);
+  margin-bottom: 0.45rem;
 }
 
 .enterprise-banner h3 {
-  color: #FFFFFF;
+  color: var(--ink);
   font-size: 1.45rem;
   font-weight: 700;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.55rem;
   letter-spacing: -0.015em;
 }
 
 .enterprise-banner p {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--ink-2);
   margin: 0;
   font-size: 0.98rem;
   line-height: 1.55;
@@ -789,21 +802,22 @@ body {
 }
 
 .enterprise-banner .btn-primary {
-  background-color: #FFFFFF;
-  color: var(--primary-deep);
+  background-color: var(--primary);
+  color: #FFFFFF;
   white-space: nowrap;
+  padding: 0.95rem 1.7rem;
 }
 
 .enterprise-banner .btn-primary:hover {
-  background-color: var(--paper-3);
-  color: var(--primary-deep);
+  background-color: var(--primary-deep);
 }
 
 @media (max-width: 720px) {
   .enterprise-banner {
     grid-template-columns: 1fr;
     gap: 1.4rem;
-    padding: 1.6rem 1.6rem;
+    padding: 1.7rem 1.6rem;
+    margin-top: 3rem;
   }
   .enterprise-banner .btn-primary {
     width: 100%;
