@@ -751,6 +751,66 @@ body {
   gap: 0.55rem;
 }
 
+.enterprise-banner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding: 2rem 2.2rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+  border-radius: var(--radius-lg);
+  color: #FFFFFF;
+}
+
+.enterprise-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 0.4rem;
+}
+
+.enterprise-banner h3 {
+  color: #FFFFFF;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+.enterprise-banner p {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  max-width: 44em;
+}
+
+.enterprise-banner .btn-primary {
+  background-color: #FFFFFF;
+  color: var(--primary-deep);
+  white-space: nowrap;
+}
+
+.enterprise-banner .btn-primary:hover {
+  background-color: var(--paper-3);
+  color: var(--primary-deep);
+}
+
+@media (max-width: 720px) {
+  .enterprise-banner {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 1.6rem 1.6rem;
+  }
+  .enterprise-banner .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .pricing-note {
   text-align: center;
   margin-top: 2rem;

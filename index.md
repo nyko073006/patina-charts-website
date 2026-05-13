@@ -15,7 +15,7 @@ layout: default
       <a href="#funktionen" class="btn-secondary">Funktionen entdecken</a>
     </div>
     <p class="hero-sub-cta">
-      Lieber erst testen? <a href="{{ site.download_url }}">14 Tage über Apple TestFlight</a> — kostenlos, ohne Stripe.
+      Lieber erst testen? <a href="{{ site.download_url }}">14 Tage mit Apple TestFlight</a> — ohne Zahlung.
     </p>
     <div class="trust-row">
       <span>iPad-native</span>
@@ -164,6 +164,15 @@ layout: default
         <a href="mailto:nyko@patinasouthside.de?subject=Founder%20Member%20-%20Patina%20Charts" class="btn-secondary">Founder-Status anfragen</a>
       </div>
     </div>
+    <div class="enterprise-banner">
+      <div class="enterprise-text">
+        <div class="enterprise-eyebrow">Geschäftsstelle oder Strukturvertrieb</div>
+        <h3>Enterprise — ab 10 Beratern.</h3>
+        <p>Volumen-Lizenzen, eigene Tarif-DB-Branch mit Haus-Produkten, individuelles Branding und Onboarding-Schulungen für dein Team. Preis nach Aufwand und Berater-Anzahl.</p>
+      </div>
+      <a href="mailto:nyko@patinasouthside.de?subject=Enterprise-Anfrage%20Patina%20Charts&body=Hallo%20Niklas%2C%0A%0Awir%20m%C3%B6chten%20Patina%20Charts%20f%C3%BCr%20eine%20Gesch%C3%A4ftsstelle%20%2F%20einen%20Strukturvertrieb%20einsetzen.%0A%0AGesellschaft%3A%20%0AAnzahl%20Berater%3A%20%0AAktuelles%20Beratungs-Tool%3A%20%0AWunschtermin%20f%C3%BCr%20Demo%3A%20%0A%0AViele%20Gr%C3%BC%C3%9Fe" class="btn-primary">Enterprise-Demo anfragen</a>
+    </div>
+
     <p class="pricing-note">Lieber erst risikofrei testen? <a href="{{ site.download_url }}">14 Tage über Apple TestFlight starten</a> — kein Zahlungsmittel, kein Stripe-Konto. Kündigung jederzeit zum Ende der laufenden Abrechnungsperiode möglich.</p>
   </div>
 </section>
