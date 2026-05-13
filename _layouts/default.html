@@ -82,7 +82,10 @@
       <a href="{{ '/' | relative_url }}#datenschutz">Datenschutz</a>
       <a href="{{ '/' | relative_url }}#faq">FAQ</a>
     </nav>
-    <a href="{{ site.download_url }}" class="nav-cta">{{ site.download_label }}</a>
+    <div class="nav-cta-group">
+      <a href="{{ site.download_url }}" class="nav-link-secondary">Beta via TestFlight</a>
+      <a href="{{ '/' | relative_url }}#preise" class="nav-cta">Tarife ansehen</a>
+    </div>
   </div>
 </header>
 

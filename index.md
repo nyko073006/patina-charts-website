@@ -11,9 +11,12 @@ layout: default
     <h1>Im Beratungstermin den Vergleich gewinnen.</h1>
     <p class="lead">Patina Charts vergleicht ETF-Sparpläne mit fondsgebundenen Rentenversicherungen — vor Steuer, nach Steuer, mit Halbeinkünfteverfahren und Vorabpauschale. Über 30 deutsche Tarife sind hinterlegt. Drei Eingaben vom Mandanten, neunzig Sekunden, IDD-konforme PDF im Mail-Entwurf.</p>
     <div class="hero-actions">
-      <a href="{{ site.download_url }}" class="btn-primary">{{ site.download_label }}</a>
-      <a href="#funktionen" class="btn-secondary">Funktionen ansehen</a>
+      <a href="#preise" class="btn-primary">Tarife ansehen</a>
+      <a href="#funktionen" class="btn-secondary">Funktionen entdecken</a>
     </div>
+    <p class="hero-sub-cta">
+      Lieber erst testen? <a href="{{ site.download_url }}">14 Tage über Apple TestFlight</a> — kostenlos, ohne Stripe.
+    </p>
     <div class="trust-row">
       <span>iPad-native</span>
       <span>DSGVO-konform</span>
@@ -121,7 +124,10 @@ layout: default
           <li>Bis zu 50 Mandanten</li>
           <li>Apple-Kalender-Integration</li>
         </ul>
-        <a href="{{ site.download_url }}" class="btn-secondary">14 Tage testen</a>
+        <div class="tier-actions">
+          <a href="https://buy.stripe.com/aFa9AS1wccjg2eJ2q1aVa00" class="btn-primary">Monatlich · 49 €</a>
+          <a href="https://buy.stripe.com/bJeaEWb6MdnkbPjc0BaVa03" class="btn-secondary">Jährlich · 490 €</a>
+        </div>
       </div>
       <div class="tier featured">
         <div class="tier-badge">Empfohlen</div>
@@ -137,7 +143,10 @@ layout: default
           <li>Multi-Berater-Account</li>
           <li>Prioritäts-Support</li>
         </ul>
-        <a href="{{ site.download_url }}" class="btn-primary">14 Tage testen</a>
+        <div class="tier-actions">
+          <a href="https://buy.stripe.com/4gM28qb6M0Ay2eJd4FaVa01" class="btn-primary">Monatlich · 99 €</a>
+          <a href="https://buy.stripe.com/bJe6oGb6M6YW5qV8OpaVa02" class="btn-secondary">Jährlich · 990 €</a>
+        </div>
       </div>
       <div class="tier founder">
         <div class="tier-badge tier-badge-amber">Limitiert</div>
@@ -155,7 +164,7 @@ layout: default
         <a href="mailto:nyko@patinasouthside.de?subject=Founder%20Member%20-%20Patina%20Charts" class="btn-secondary">Founder-Status anfragen</a>
       </div>
     </div>
-    <p class="pricing-note">Die Testphase startet automatisch bei Installation. Kündigung jederzeit zum Ende der laufenden Abrechnungsperiode möglich.</p>
+    <p class="pricing-note">Lieber erst risikofrei testen? <a href="{{ site.download_url }}">14 Tage über Apple TestFlight starten</a> — kein Zahlungsmittel, kein Stripe-Konto. Kündigung jederzeit zum Ende der laufenden Abrechnungsperiode möglich.</p>
   </div>
 </section>
 
@@ -232,8 +241,11 @@ layout: default
 
 <section class="section section-narrow">
   <div class="cta-banner">
-    <h2>Im nächsten Termin testen</h2>
-    <p>Vierzehn Tage kostenlos auf dem iPad. Kein Verkaufsgespräch, kein Demo-Call.</p>
-    <a href="{{ site.download_url }}" class="btn-primary">{{ site.download_label }}</a>
+    <h2>Im nächsten Termin loslegen.</h2>
+    <p>Direkt-Abo über Stripe, sofort einsatzbereit auf dem iPad. Oder vorher 14 Tage über Apple TestFlight prüfen.</p>
+    <div class="cta-banner-actions">
+      <a href="#preise" class="btn-primary">Tarif wählen</a>
+      <a href="{{ site.download_url }}" class="btn-secondary btn-secondary-on-dark">TestFlight starten</a>
+    </div>
   </div>
 </section>
