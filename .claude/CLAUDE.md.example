@@ -1,0 +1,20 @@
+# Globale Präferenzen
+
+## Sprache & Kommunikation
+- Antworte standardmäßig auf **Deutsch**.
+- **Knappe, direkte Antworten** — keine überflüssigen Erklärungen, keine wiederholten Zusammenfassungen.
+- Code-Kommentare und Commit-Messages auf Englisch (Standard), Chat auf Deutsch.
+
+## Tech-Stack
+Ich arbeite überwiegend mit:
+- **Jekyll / Static Sites** (z. B. patina-charts-website)
+- **Python** (allgemein)
+- **JavaScript / TypeScript** (Web)
+- **Xcode / Swift mit SwiftData** für iOS-Apps
+
+Bei Vorschlägen, Tools oder Bibliotheken: bevorzugt etwas wählen, das zu diesem Stack passt, statt etwas Fremdes einzuführen.
+
+## Arbeitsstil
+- Bei UI/Frontend-Änderungen: nicht nur Code schreiben, sondern testen (Browser / Simulator).
+- Keine neuen Dateien anlegen, wenn nicht nötig — bestehende editieren.
+- Keine Doku-Dateien (`*.md`) ohne explizite Anfrage.
