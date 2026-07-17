@@ -6,8 +6,8 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0E1622" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#10233B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1521" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:type" content="website">
@@ -27,6 +27,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
 <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+<link rel="preload" href="{{ '/assets/fonts/newsreader-600.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/inter-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/inter-500.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <script>
 (function(){
@@ -75,7 +78,17 @@
 
 <header class="site-header">
   <div class="site-header-inner">
-    <a href="{{ '/' | relative_url }}" class="brand">Patina&nbsp;Charts</a>
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2.5 21.5 8 2.5 8Z"/>
+        <rect x="2.6" y="8.7" width="18.8" height="1.5" rx="0.3"/>
+        <rect x="5.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+        <rect x="11.05" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+        <rect x="16.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+        <rect x="2.6" y="19" width="18.8" height="2" rx="0.4"/>
+      </svg>
+      <span>Patina&nbsp;Charts</span>
+    </a>
     <nav class="primary-nav">
       <a href="{{ '/' | relative_url }}#funktionen">Funktionen</a>
       <a href="{{ '/' | relative_url }}#preise">Preise</a>
@@ -96,7 +109,17 @@
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div class="footer-col">
-      <div class="footer-brand">Patina&nbsp;Charts</div>
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.5 21.5 8 2.5 8Z"/>
+          <rect x="2.6" y="8.7" width="18.8" height="1.5" rx="0.3"/>
+          <rect x="5.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+          <rect x="11.05" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+          <rect x="16.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+          <rect x="2.6" y="19" width="18.8" height="2" rx="0.4"/>
+        </svg>
+        <span>Patina&nbsp;Charts</span>
+      </div>
       <p class="footer-tag">ETF gegen Fondspolice — entschieden im Termin.</p>
     </div>
     <div class="footer-col">

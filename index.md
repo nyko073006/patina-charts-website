@@ -79,25 +79,25 @@ layout: default
     <p class="section-lead center">Vom ersten Klick bis zur unterschriftsreifen Doku.</p>
     <div class="timeline">
       <div class="timeline-step">
-        <div class="timeline-dot">1</div>
+        <div class="timeline-dot">01</div>
         <div class="timeline-time">0 Sek</div>
         <h3>Drei Eingaben</h3>
         <p>Sparrate, Sparhorizont, Steuerprofil. Mehr braucht Patina nicht für die erste Modellrechnung.</p>
       </div>
       <div class="timeline-step">
-        <div class="timeline-dot">2</div>
+        <div class="timeline-dot">02</div>
         <div class="timeline-time">30 Sek</div>
         <h3>Live-Vergleich</h3>
         <p>Zwei oder drei Tarife auswählen, Vergleich auf einem Bildschirm. Vor Steuer, nach Steuer, mit Stress-Test.</p>
       </div>
       <div class="timeline-step">
-        <div class="timeline-dot">3</div>
+        <div class="timeline-dot">03</div>
         <div class="timeline-time">90 Sek</div>
         <h3>PDF im Entwurf</h3>
         <p>IDD-konforme Beratungsdoku entsteht parallel im Hintergrund. Liegt direkt im Mail-Entwurfsordner.</p>
       </div>
       <div class="timeline-step">
-        <div class="timeline-dot">4</div>
+        <div class="timeline-dot">04</div>
         <div class="timeline-time">Folgetermin</div>
         <h3>Im Kalender</h3>
         <p>Termin in Apple-Kalender, Mandanten-Notizen verknüpft, kein wiederholtes Datensammeln.</p>

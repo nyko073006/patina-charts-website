@@ -10,3 +10,16 @@ lang: de
 download_url: "https://testflight.apple.com/join/MnfSfNm2"
 download_label: "Beta via TestFlight starten"
 download_subtext: "Direkt-Einladung über Apple TestFlight – kostenlos, jederzeit kündbar"
+
+# Internal docs — never publish these to the built site.
+# NOTE: setting `exclude` overrides Jekyll's defaults, so the defaults are repeated here.
+exclude:
+  - REDESIGN.md
+  - README.md
+  - assets/Businessplan_PatinaCharts.docx
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - node_modules
