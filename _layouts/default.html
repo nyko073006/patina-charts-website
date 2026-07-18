@@ -6,8 +6,8 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#07101D" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#10233B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1521" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:type" content="website">
@@ -22,62 +22,20 @@
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:image" content="https://patinacharts.de/assets/og-image.png">
-
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
 <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-
+<link rel="preload" href="{{ '/assets/fonts/newsreader-600.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/inter-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/inter-500.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
 <script>
 (function(){
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   document.addEventListener('DOMContentLoaded', function(){
-    // Sticky-header scroll shadow
-    var header = document.querySelector('.site-header');
-    var onScroll = function(){
-      if (!header) return;
-      if (window.scrollY > 8) header.classList.add('is-scrolled');
-      else header.classList.remove('is-scrolled');
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
-    // Mobile menu toggle
-    var navToggle = document.querySelector('.nav-toggle');
-    if (navToggle) {
-      navToggle.addEventListener('click', function(){
-        document.body.classList.toggle('nav-open');
-        var open = document.body.classList.contains('nav-open');
-        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      document.querySelectorAll('.mobile-nav a').forEach(function(a){
-        a.addEventListener('click', function(){
-          document.body.classList.remove('nav-open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-
-    // Feature card hover spotlight
-    document.querySelectorAll('.feature').forEach(function(card){
-      card.addEventListener('pointermove', function(e){
-        var r = card.getBoundingClientRect();
-        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
-        card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
-      });
-    });
-
-    if (reduced) return;
-
-    // Reveal-on-scroll
-    var sel = '.feature, .timeline-step, .tier, .faq details, .section h2, .section .section-lead, .section-eyebrow, .cta-banner, .device-mockup, .dsgvo-text, .comparison-card, .enterprise-banner, .metric, .hero-chart-wrap, .hero-visual';
+    var sel = '.feature, .timeline-step, .tier, .faq details, .section h2, .section .section-lead, .cta-banner, .device-mockup, .dsgvo-text, .comparison-card';
     var els = document.querySelectorAll(sel);
     var groups = new Map();
     els.forEach(function(el){
@@ -89,7 +47,7 @@
     groups.forEach(function(items){
       items.forEach(function(el, i){
         if (!el.classList.contains('float-in')) {
-          el.style.transitionDelay = (i * 60) + 'ms';
+          el.style.transitionDelay = (i * 70) + 'ms';
         }
       });
     });
@@ -103,25 +61,11 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
     els.forEach(function(el){ io.observe(el); });
 
-    // Timeline animated progress line
-    var timeline = document.querySelector('.timeline');
-    if (timeline) {
-      var tio = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if (e.isIntersecting) {
-            e.target.classList.add('is-progress');
-            tio.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.3 });
-      tio.observe(timeline);
-    }
-
     // Hero load-in
-    var heroItems = document.querySelectorAll('.hero .eyebrow, .hero h1, .hero .lead, .hero-actions, .hero-sub-cta, .trust-row');
+    var heroItems = document.querySelectorAll('.hero .eyebrow, .hero h1, .hero .lead, .hero-actions, .trust-row');
     heroItems.forEach(function(el, i){
       el.classList.add('hero-anim');
-      el.style.transitionDelay = (i * 80) + 'ms';
+      el.style.transitionDelay = (i * 90) + 'ms';
     });
     requestAnimationFrame(function(){
       document.body.classList.add('hero-ready');
@@ -135,46 +79,28 @@
 <header class="site-header">
   <div class="site-header-inner">
     <a href="{{ '/' | relative_url }}" class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-          <path d="M3 18L8 13L12 16L21 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M15 6H21V12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </span>
-      Patina&nbsp;Charts
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2.5 21.5 8 2.5 8Z"/>
+        <rect x="2.6" y="8.7" width="18.8" height="1.5" rx="0.3"/>
+        <rect x="5.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+        <rect x="11.05" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+        <rect x="16.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+        <rect x="2.6" y="19" width="18.8" height="2" rx="0.4"/>
+      </svg>
+      <span>Patina&nbsp;Charts</span>
     </a>
-    <nav class="primary-nav" aria-label="Primärnavigation">
+    <nav class="primary-nav">
       <a href="{{ '/' | relative_url }}#funktionen">Funktionen</a>
-      <a href="{{ '/' | relative_url }}#workflow">Workflow</a>
-      <a href="{{ '/' | relative_url }}#datenschutz">Datenschutz</a>
       <a href="{{ '/' | relative_url }}#preise">Preise</a>
+      <a href="{{ '/' | relative_url }}#datenschutz">Datenschutz</a>
       <a href="{{ '/' | relative_url }}#faq">FAQ</a>
     </nav>
     <div class="nav-cta-group">
-      <a href="{{ site.download_url }}" class="nav-link-secondary">TestFlight</a>
-      <a href="{{ '/' | relative_url }}#preise" class="nav-cta">
-        Tarife
-        <svg class="nav-cta-arrow" width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-        </svg>
-      </button>
+      <a href="{{ site.download_url }}" class="nav-link-secondary">Beta via TestFlight</a>
+      <a href="{{ '/' | relative_url }}#preise" class="nav-cta">Tarife ansehen</a>
     </div>
   </div>
 </header>
-
-<nav class="mobile-nav" aria-label="Mobile Navigation">
-  <a href="{{ '/' | relative_url }}#funktionen">Funktionen</a>
-  <a href="{{ '/' | relative_url }}#workflow">Workflow</a>
-  <a href="{{ '/' | relative_url }}#datenschutz">Datenschutz</a>
-  <a href="{{ '/' | relative_url }}#preise">Preise</a>
-  <a href="{{ '/' | relative_url }}#faq">FAQ</a>
-  <a href="{{ site.download_url }}">TestFlight starten</a>
-</nav>
 
 <main>
   {{ content }}
@@ -184,20 +110,21 @@
   <div class="site-footer-inner">
     <div class="footer-col">
       <div class="footer-brand">
-        <span class="brand-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M3 18L8 13L12 16L21 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M15 6H21V12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        Patina&nbsp;Charts
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.5 21.5 8 2.5 8Z"/>
+          <rect x="2.6" y="8.7" width="18.8" height="1.5" rx="0.3"/>
+          <rect x="5.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+          <rect x="11.05" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+          <rect x="16.55" y="10.9" width="1.9" height="7.4" rx="0.2"/>
+          <rect x="2.6" y="19" width="18.8" height="2" rx="0.4"/>
+        </svg>
+        <span>Patina&nbsp;Charts</span>
       </div>
-      <p class="footer-tag">ETF gegen Fondspolice — entschieden im Termin. Das iPad-Beratungstool für deutsche Vermittler.</p>
+      <p class="footer-tag">ETF gegen Fondspolice — entschieden im Termin.</p>
     </div>
     <div class="footer-col">
       <div class="footer-h">Produkt</div>
       <a href="{{ '/' | relative_url }}#funktionen">Funktionen</a>
-      <a href="{{ '/' | relative_url }}#workflow">Workflow</a>
       <a href="{{ '/' | relative_url }}#preise">Preise</a>
       <a href="{{ '/' | relative_url }}#faq">FAQ</a>
     </div>
@@ -206,17 +133,11 @@
       <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
       <a href="{{ '/privacy/' | relative_url }}">Datenschutz</a>
       <a href="{{ '/agb/' | relative_url }}">AGB</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-h">Kontakt</div>
       <a href="{{ '/support/' | relative_url }}">Support</a>
-      <a href="mailto:nyko@patinasouthside.de">E-Mail</a>
-      <a href="{{ site.download_url }}">TestFlight</a>
     </div>
   </div>
   <div class="site-footer-base">
-    <span>© {{ 'now' | date: '%Y' }} Niklas Humplik · Patina Charts</span>
-    <span class="made">Made in Germany · iPad-native</span>
+    © {{ 'now' | date: '%Y' }} Niklas Humplik · Patina Charts
   </div>
 </footer>
 
