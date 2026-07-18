@@ -37,6 +37,9 @@
   --highlight: #A9812E;      /* gilt */
   --highlight-soft: rgba(169, 129, 46, 0.12);
 
+  --header-bg: rgba(16, 35, 59, 0.86);      /* navy-deep @ ~86% (libsass-safe, no color-mix) */
+  --accent-line: rgba(31, 138, 76, 0.22);   /* faint accent border */
+
   /* On the permanently-dark surfaces (header, hero, footer, cta) */
   --on-dark: #F3F6FA;
   --on-dark-2: rgba(243, 246, 250, 0.72);
@@ -80,6 +83,9 @@
 
     --highlight: #D0A24A;
     --highlight-soft: rgba(208, 162, 74, 0.14);
+
+    --header-bg: rgba(10, 21, 33, 0.86);
+    --accent-line: rgba(53, 179, 104, 0.24);
 
     --dark-surface: #0C1A29;
     --dark-surface-2: #08131F;
@@ -151,7 +157,7 @@ body.hero-ready .hero-anim { opacity: 1; transform: none; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: color-mix(in srgb, var(--navy-deep) 86%, transparent);
+  background-color: var(--header-bg);
   backdrop-filter: saturate(150%) blur(16px);
   -webkit-backdrop-filter: saturate(150%) blur(16px);
   border-bottom: 1px solid var(--on-dark-rule);
@@ -536,7 +542,7 @@ body.hero-ready .hero-anim { opacity: 1; transform: none; }
   height: 42px;
   background-color: var(--accent-soft);
   color: var(--accent-deep);
-  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  border: 1px solid var(--accent-line);
   border-radius: 10px;
   font-family: var(--serif);
   font-weight: 600;
