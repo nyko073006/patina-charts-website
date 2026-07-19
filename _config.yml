@@ -11,6 +11,11 @@ download_url: "https://testflight.apple.com/join/MnfSfNm2"
 download_label: "Beta via TestFlight starten"
 download_subtext: "Direkt-Einladung über Apple TestFlight – kostenlos, jederzeit kündbar"
 
+# Google Search Console — paste the HTML-tag verification token here (the value
+# of the content="..." attribute Google shows you), then deploy and click
+# "Verify" in the Console. Leave empty to omit the tag.
+google_site_verification: ""
+
 # Internal docs — never publish these to the built site.
 # NOTE: setting `exclude` overrides Jekyll's defaults, so the defaults are repeated here.
 exclude:

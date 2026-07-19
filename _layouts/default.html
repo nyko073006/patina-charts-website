@@ -6,6 +6,9 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+{% unless page.noindex %}<link rel="canonical" href="https://patinacharts.de{{ page.url }}">{% endunless %}
+<meta name="author" content="Niklas Julian Humplik">
+{% if site.google_site_verification and site.google_site_verification != "" %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
 <meta name="theme-color" content="#10233B" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A1521" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -31,6 +34,82 @@
 <link rel="preload" href="{{ '/assets/fonts/inter-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/fonts/inter-500.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://patinacharts.de/#organization",
+      "name": "Patina Charts",
+      "url": "https://patinacharts.de/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://patinacharts.de/assets/icons/favicon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "nyko@patinasouthside.de",
+      "founder": { "@type": "Person", "name": "Niklas Julian Humplik" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Giengen an der Brenz",
+        "postalCode": "89537",
+        "addressCountry": "DE"
+      },
+      "areaServed": "DE"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://patinacharts.de/#website",
+      "url": "https://patinacharts.de/",
+      "name": "Patina Charts",
+      "description": {{ site.description | jsonify }},
+      "inLanguage": "de-DE",
+      "publisher": { "@id": "https://patinacharts.de/#organization" }
+    }
+  ]
+}
+</script>
+{% if page.home %}<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Patina Charts",
+  "operatingSystem": "iPadOS",
+  "applicationCategory": "BusinessApplication",
+  "description": {{ page.description | jsonify }},
+  "url": "https://patinacharts.de/",
+  "image": "https://patinacharts.de/assets/og-image.png",
+  "inLanguage": "de-DE",
+  "publisher": { "@id": "https://patinacharts.de/#organization" },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "49",
+    "highPrice": "99",
+    "offerCount": "3",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in site.data.faq %}{
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | strip_html | normalize_whitespace | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>{% endif %}
 <script>
 (function(){
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;

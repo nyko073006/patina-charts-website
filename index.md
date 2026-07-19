@@ -208,42 +208,12 @@ layout: default
   <div class="section-inner section-tight">
     <h2 class="center">Häufige Fragen</h2>
     <div class="faq">
+      {% for item in site.data.faq %}
       <details>
-        <summary>Funktioniert die App ohne Internet?</summary>
-        <p>Größtenteils ja. Mandantenverwaltung, Berechnungen und PDF-Export laufen offline. Nur Tarif-DB-Updates und der Login brauchen eine Verbindung.</p>
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a }}</p>
       </details>
-      <details>
-        <summary>Werden Mandanten-Daten in die Cloud synchronisiert?</summary>
-        <p>Standardmäßig nicht. Mandanten liegen lokal via SwiftData auf dem iPad. Optional kannst du Team-Sync via Supabase aktivieren — dann werden Mandanten verschlüsselt zwischen mehreren Beratern eines Accounts geteilt.</p>
-      </details>
-      <details>
-        <summary>Wie aktuell sind die Tarif-Werte?</summary>
-        <p>Die Tarif-Datenbank wird regelmäßig aktualisiert und stammt aus öffentlichen Produktinformationsblättern der Anbieter. Für die finale Beratung sind immer die Werte aus dem aktuellen PIB des Anbieters maßgeblich — Patina Charts liefert plausible Branchen-Größenordnungen für den Live-Vergleich im Termin.</p>
-      </details>
-      <details>
-        <summary>Kann ich eigene Tarife hinzufügen?</summary>
-        <p>Im Professional-Tier kannst du Tarife per JSON-Import hinzufügen. Für eigene Datenbank-Branches mit privaten Tarifen gibt es ein Enterprise-Setup auf Anfrage.</p>
-      </details>
-      <details>
-        <summary>Gibt es eine Android- oder Web-Version?</summary>
-        <p>Aktuell iPad-only. Die App nutzt nativ iPadOS-Features (Apple Pencil, EventKit, StoreKit) und ist für die Beratung im persönlichen Termin optimiert. Eine iPhone-Version ist in Planung, eine Web-Version nicht.</p>
-      </details>
-      <details>
-        <summary>Wie aktiviere ich meine Lizenz nach dem Kauf?</summary>
-        <p>Nach der Zahlung erhältst du eine E-Mail mit deinem Aktivierungscode. Diesen gibst du in der App unter „Lizenz aktivieren" zusammen mit deiner E-Mail-Adresse ein. Sofort freigeschaltet, kein Cloud-Login nötig.</p>
-      </details>
-      <details>
-        <summary>Welche Rechtsgrundlage hat die App? Ist sie IDD-konform?</summary>
-        <p>Patina Charts ist eine Berechnungs- und Visualisierungssoftware, keine Anlage-, Steuer- oder Versicherungsberatung. Die erstellten Vergleiche sind unverbindliche Modellrechnungen, die als Anlage zu deiner eigenen Beratung dienen. Die Protokoll-PDFs sind so strukturiert, dass sie als Dokumentation gemäß IDD-Beratungspflichten (§11 VersVermV) verwendet werden können.</p>
-      </details>
-      <details>
-        <summary>Wie kündige ich mein Abo?</summary>
-        <p>Direkt-Abo (Stripe): Über den Self-Service-Link aus deiner Bestätigungs-E-Mail, jederzeit zum Ende der laufenden Periode. App-Store-Abo: <em>iPhone/iPad → Einstellungen → [dein Name] → Abonnements → Patina Charts → Abo beenden</em>. Nach Kündigung wechselt die App in den Read-Only-Modus — deine Mandantendaten bleiben erhalten, du kannst jederzeit reaktivieren.</p>
-      </details>
-      <details>
-        <summary>Bietet ihr Schulungen für Geschäftsstellen?</summary>
-        <p>Für Geschäftsstellen mit fünf oder mehr Beratern bieten wir kostenlose 60-Minuten-Onboarding-Calls an. Schreib uns kurz an <a href="mailto:nyko@patinasouthside.de?subject=Onboarding-Call%20Geschäftsstelle">nyko@patinasouthside.de</a>.</p>
-      </details>
+      {% endfor %}
     </div>
   </div>
 </section>
