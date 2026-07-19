@@ -28,7 +28,7 @@ Wenn du dich in der App registrierst:
 - E-Mail-Adresse
 - Passwort (verschlüsselt gespeichert via Supabase Auth)
 - Optional: Name, Firma, Profilbild, Vermittlerregister-Nr., Anschrift, Telefon
-  (für Statusinformation im PDF nach §11 VersVermV)
+  (für Statusinformation im PDF nach § 15 VersVermV)
 
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).
 

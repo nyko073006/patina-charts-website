@@ -20,7 +20,7 @@
   a: 'Nach der Zahlung erhältst du eine E-Mail mit deinem Aktivierungscode. Diesen gibst du in der App unter „Lizenz aktivieren" zusammen mit deiner E-Mail-Adresse ein. Sofort freigeschaltet, kein Cloud-Login nötig.'
 
 - q: 'Welche Rechtsgrundlage hat die App? Ist sie IDD-konform?'
-  a: 'Patina Charts ist eine Berechnungs- und Visualisierungssoftware, keine Anlage-, Steuer- oder Versicherungsberatung. Die erstellten Vergleiche sind unverbindliche Modellrechnungen, die als Anlage zu deiner eigenen Beratung dienen. Die Protokoll-PDFs sind so strukturiert, dass sie als Dokumentation gemäß IDD-Beratungspflichten (§11 VersVermV) verwendet werden können.'
+  a: 'Patina Charts ist eine Berechnungs- und Visualisierungssoftware, keine Anlage-, Steuer- oder Versicherungsberatung. Die erstellten Vergleiche sind unverbindliche Modellrechnungen, die als Anlage zu deiner eigenen Beratung dienen. Die Protokoll-PDFs sind so strukturiert, dass sie als Dokumentation gemäß IDD-Beratungspflichten (§ 61 VVG) verwendet werden können.'
 
 - q: 'Wie kündige ich mein Abo?'
   a: 'Direkt-Abo (Stripe): Über den Self-Service-Link aus deiner Bestätigungs-E-Mail, jederzeit zum Ende der laufenden Periode. App-Store-Abo: <em>iPhone/iPad → Einstellungen → [dein Name] → Abonnements → Patina Charts → Abo beenden</em>. Nach Kündigung wechselt die App in den Read-Only-Modus — deine Mandantendaten bleiben erhalten, du kannst jederzeit reaktivieren.'

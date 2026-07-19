@@ -20,7 +20,7 @@ layout: default
     <div class="trust-row">
       <span>iPad-native</span>
       <span>DSGVO-konform</span>
-      <span>IDD nach §11 VersVermV</span>
+      <span>IDD-Doku (§ 61 VVG)</span>
       <span>Made in Germany</span>
     </div>
   </div>
@@ -47,7 +47,7 @@ layout: default
       <div class="feature">
         <div class="feature-icon">PDF</div>
         <h3>IDD-PDF in 90 Sekunden</h3>
-        <p>Statusinformation nach §11 VersVermV, Empfehlungsbegründung, Beschwerdewege. Vom letzten Klick bis zur unterschriftsreifen Doku in anderthalb Minuten.</p>
+        <p>Statusinformation nach § 15 VersVermV, Empfehlungsbegründung, Beschwerdewege. Vom letzten Klick bis zur unterschriftsreifen Doku in anderthalb Minuten.</p>
       </div>
       <div class="feature">
         <div class="feature-icon">!</div>
