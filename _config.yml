@@ -14,7 +14,7 @@ download_subtext: "Direkt-Einladung über Apple TestFlight – kostenlos, jederz
 # Google Search Console — paste the HTML-tag verification token here (the value
 # of the content="..." attribute Google shows you), then deploy and click
 # "Verify" in the Console. Leave empty to omit the tag.
-google_site_verification: ""
+google_site_verification: "INyHcy8YMGmn2aTkocJku6QPvZYNSAEghH5fRMGHhTw"
 
 # Internal docs — never publish these to the built site.
 # NOTE: setting `exclude` overrides Jekyll's defaults, so the defaults are repeated here.
