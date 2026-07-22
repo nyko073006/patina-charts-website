@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<article class="article">
+
+  <nav class="breadcrumb" aria-label="Brotkrümelnavigation">
+    <a href="{{ '/' | relative_url }}">Start</a>
+    <span class="crumb-sep" aria-hidden="true">›</span>
+    <a href="{{ page.section_url | relative_url }}">{{ page.section_name }}</a>
+    <span class="crumb-sep" aria-hidden="true">›</span>
+    <span aria-current="page">{{ page.breadcrumb | default: page.title }}</span>
+  </nav>
+
+  <header class="article-head">
+    {% if page.eyebrow %}<div class="article-eyebrow">{{ page.eyebrow }}</div>{% endif %}
+    <h1>{{ page.h1 | default: page.title }}</h1>
+    {% if page.lead %}<p class="article-lead">{{ page.lead }}</p>{% endif %}
+    {% if page.stand %}<p class="article-stand">Stand: {{ page.stand }}</p>{% endif %}
+  </header>
+
+  <div class="article-body">
+    {{ content }}
+  </div>
+
+  {% unless page.no_disclaimer %}{% include disclaimer.html %}{% endunless %}
+  {% unless page.no_cta %}{% include cta.html %}{% endunless %}
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://patinacharts.de/" },
+    { "@type": "ListItem", "position": 2, "name": {{ page.section_name | jsonify }}, "item": {{ page.section_url | prepend: "https://patinacharts.de" | jsonify }} },
+    { "@type": "ListItem", "position": 3, "name": {{ page.breadcrumb | default: page.title | jsonify }}, "item": {{ page.url | prepend: "https://patinacharts.de" | jsonify }} }
+  ]
+}
+</script>
+{% unless page.no_article %}<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.h1 | default: page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "inLanguage": "de-DE",
+  "mainEntityOfPage": {{ page.url | prepend: "https://patinacharts.de" | jsonify }},
+  "image": "https://patinacharts.de/assets/og-image.png",
+  "author": { "@type": "Person", "name": "Niklas Julian Humplik" },
+  "publisher": { "@id": "https://patinacharts.de/#organization" }{% if page.published_iso %},
+  "datePublished": {{ page.published_iso | jsonify }}{% endif %}{% if page.modified_iso %},
+  "dateModified": {{ page.modified_iso | jsonify }}{% endif %}
+}
+</script>{% endunless %}

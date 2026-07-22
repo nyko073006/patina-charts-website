@@ -29,4 +29,14 @@ permalink: /sitemap.xml
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+{%- assign content_docs = site.funktionen | concat: site.ratgeber -%}
+{%- for doc in content_docs -%}
+{%- unless doc.noindex or doc.sitemap == false -%}
+  <url>
+    <loc>https://patinacharts.de{{ doc.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+{% endunless -%}
+{%- endfor %}
 </urlset>
