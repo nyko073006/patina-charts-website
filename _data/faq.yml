@@ -23,7 +23,7 @@
   a: 'Patina Charts ist eine Berechnungs- und Visualisierungssoftware, keine Anlage-, Steuer- oder Versicherungsberatung. Die erstellten Vergleiche sind unverbindliche Modellrechnungen, die als Anlage zu deiner eigenen Beratung dienen. Die Protokoll-PDFs sind so strukturiert, dass sie als Dokumentation gemäß IDD-Beratungspflichten (§ 61 VVG) verwendet werden können.'
 
 - q: 'Wie kündige ich mein Abo?'
-  a: 'Direkt-Abo (Stripe): Über den Self-Service-Link aus deiner Bestätigungs-E-Mail, jederzeit zum Ende der laufenden Periode. App-Store-Abo: <em>iPhone/iPad → Einstellungen → [dein Name] → Abonnements → Patina Charts → Abo beenden</em>. Nach Kündigung wechselt die App in den Read-Only-Modus — deine Mandantendaten bleiben erhalten, du kannst jederzeit reaktivieren.'
+  a: 'Über die Apple-ID: <em>iPhone/iPad → Einstellungen → [dein Name] → Abonnements → Patina Charts → Abo beenden</em>, jederzeit zum Ende der laufenden Periode. Kündigst du innerhalb der ersten vierzehn Tage, entstehen keine Kosten. Nach Kündigung wechselt die App in den Read-Only-Modus — deine Mandantendaten bleiben erhalten, du kannst jederzeit reaktivieren.'
 
 - q: 'Bietet ihr Schulungen für Geschäftsstellen?'
   a: 'Für Geschäftsstellen mit fünf oder mehr Beratern bieten wir kostenlose 60-Minuten-Onboarding-Calls an. Schreib uns kurz an <a href="mailto:nyko@patinasouthside.de?subject=Onboarding-Call%20Geschäftsstelle">nyko@patinasouthside.de</a>.'

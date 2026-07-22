@@ -9,10 +9,9 @@ permalink: /agb/
 
 Stand: {{ 'now' | date: '%d.%m.%Y' }}
 
-> **Hinweis:** Diese Fassung der AGB ist eine Vorab-Version. Eine anwaltlich
-> finalisierte Fassung wird mit Markteinführung der App veröffentlicht.
-> Für laufende Beta-Testphasen gelten die jeweiligen TestFlight-Bedingungen
-> von Apple ergänzend.
+> **Hinweis:** Diese Fassung der AGB ist eine Vorab-Version; eine anwaltlich
+> finalisierte Fassung folgt. Für das Abonnement gelten ergänzend die
+> Apple-Media-Services-Bedingungen.
 
 ## 1. Geltungsbereich
 
@@ -24,21 +23,16 @@ und Finanzvermittler sowie Strukturvertriebe (B2B).
 
 ## 2. Vertragsschluss
 
-Der Vertrag kommt zustande durch:
-
-1. Aktivierung einer Lizenz mit gültigem Aktivierungscode in der App, oder
-2. Abschluss eines Abonnements über den jeweiligen Vertriebsweg
-   (Direkt-Abrechnung über Stripe oder In-App-Kauf über den Apple App Store).
-
-Die jeweils gewählte Zahlungsmethode bestimmt den Vertragspartner für die
-Zahlungsabwicklung.
+Der Vertrag kommt zustande durch Abschluss eines Abonnements als In-App-Kauf
+über den Apple App Store. Vertragspartner für die Zahlungsabwicklung ist
+insoweit Apple; die Abrechnung erfolgt über die Apple-ID des Nutzers.
 
 ## 3. Leistungsumfang
 
 Patina Charts stellt Werkzeuge zur Vergleichsberechnung von ETF-Sparplänen
 und fondsgebundenen Renten- und Lebensversicherungen sowie zur
 beratungsbegleitenden Dokumentation bereit. Die Inhalte und Funktionen sind
-abhängig vom gewählten Tarif (Basis, Professional, Founder Member).
+abhängig vom gewählten Tarif (Einzelplatz, Team, Founder Member).
 
 **Wichtig:** Patina Charts ist eine Berechnungs- und Visualisierungssoftware.
 Es handelt sich **nicht um Anlage-, Steuer- oder Versicherungsberatung**.
@@ -82,10 +76,8 @@ Das Abonnement verlängert sich automatisch um den jeweils gewählten
 Abrechnungszeitraum, sofern es nicht zum Ende der laufenden Periode
 gekündigt wird. Die Kündigung erfolgt:
 
-- **Bei Direkt-Abo (Stripe):** Über den Self-Service-Link aus der
-  Bestätigungs-E-Mail oder per E-Mail an nyko@patinasouthside.de.
-- **Bei App-Store-Abo:** Über die Apple-ID-Einstellungen auf dem
-  iPad oder iPhone.
+über die Apple-ID-Einstellungen auf dem iPad oder iPhone
+(*Einstellungen → [dein Name] → Abonnements → Patina Charts*).
 
 Eine Erstattung bereits gezahlter Beträge erfolgt nicht. Nach Ablauf der
 gekündigten Periode wechselt die App in einen Read-Only-Modus; eine

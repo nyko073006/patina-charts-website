@@ -2,19 +2,36 @@ title: Patina Charts
 description: ETF gegen Fondspolice — das iPad-Beratungstool für deutsche Vermittler.
 lang: de
 
-# Download-CTA — auf TestFlight-Link tauschen, sobald Apple den Beta-Review
-# durch hat. Für Production-Release dann auf App-Store-URL umstellen.
-# Beispiele:
-#   download_url: https://testflight.apple.com/join/XXXXXXXX
-#   download_url: https://apps.apple.com/de/app/patina-charts/idXXXXXXXXX
-download_url: "https://testflight.apple.com/join/MnfSfNm2"
-download_label: "Beta via TestFlight starten"
-download_subtext: "Direkt-Einladung über Apple TestFlight – kostenlos, jederzeit kündbar"
+# Download-CTA — die App ist seit 2026-06 live im App Store.
+# Der Trial läuft als StoreKit-Introductory-Offer in der App, nicht mehr
+# über TestFlight. `download_label` wird zentral in _includes/cta.html,
+# index.md und _layouts/default.html verwendet.
+download_url: "https://apps.apple.com/de/app/patina-charts/id6767193532"
+download_label: "14 Tage kostenlos testen"
+download_subtext: "Im App Store laden – 14 Tage kostenlos, danach 49 € / Monat, jederzeit kündbar"
 
 # Google Search Console — paste the HTML-tag verification token here (the value
 # of the content="..." attribute Google shows you), then deploy and click
 # "Verify" in the Console. Leave empty to omit the tag.
 google_site_verification: "INyHcy8YMGmn2aTkocJku6QPvZYNSAEghH5fRMGHhTw"
+
+# ---- Content (Tier 3 SEO) ----
+# Two collections: /ratgeber/ (advisor guides) and /funktionen/ (product/feature pages).
+collections:
+  ratgeber:
+    output: true
+    permalink: /ratgeber/:name/
+  funktionen:
+    output: true
+    permalink: /funktionen/:name/
+
+# Per-collection defaults so each doc gets the article layout + breadcrumb section
+# automatically (no need to repeat it in every file's front matter).
+defaults:
+  - scope: { path: "", type: "ratgeber" }
+    values: { layout: "article", section_name: "Ratgeber", section_url: "/ratgeber/" }
+  - scope: { path: "", type: "funktionen" }
+    values: { layout: "article", section_name: "Funktionen", section_url: "/#funktionen" }
 
 # Internal docs — never publish these to the built site.
 # NOTE: setting `exclude` overrides Jekyll's defaults, so the defaults are repeated here.

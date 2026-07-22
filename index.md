@@ -15,7 +15,7 @@ layout: default
       <a href="#funktionen" class="btn-secondary">Funktionen entdecken</a>
     </div>
     <p class="hero-sub-cta">
-      Lieber erst testen? <a href="{{ site.download_url }}">14 Tage mit Apple TestFlight</a> — ohne Zahlung.
+      Lieber erst testen? <a href="{{ site.download_url }}">14 Tage kostenlos im App Store</a> — Abo jederzeit kündbar.
     </p>
     <div class="trust-row">
       <span>iPad-native</span>
@@ -109,59 +109,57 @@ layout: default
 <section class="section section-alt" id="preise">
   <div class="section-inner">
     <h2 class="center">Preise</h2>
-    <p class="section-lead center">Vierzehn Tage kostenlos testen. Alle Preise netto, monatliche oder jährliche Abrechnung mit zwei Monaten Rabatt.</p>
+    <p class="section-lead center">Vierzehn Tage kostenlos testen. Alle Preise inkl. MwSt., Abrechnung über den App Store — monatlich oder jährlich mit zwei Monaten Rabatt.</p>
     <div class="pricing pricing-3col">
-      <div class="tier">
-        <div class="tier-name">Basis</div>
-        <div class="tier-price">49 € <small>/ Monat</small></div>
-        <div class="tier-price-secondary">oder 490 € jährlich · zwei Monate sparen</div>
-        <div class="tier-tag">Für freie Vermittler im Tagesgeschäft.</div>
-        <ul>
-          <li>Strategie-Vergleich ETF vs. Fondspolice</li>
-          <li>Über 30 deutsche Tarife</li>
-          <li>PDF-Export, IDD-konform</li>
-          <li>Stress-Test in drei Szenarien</li>
-          <li>Bis zu 50 Mandanten</li>
-          <li>Apple-Kalender-Integration</li>
-        </ul>
-        <div class="tier-actions">
-          <a href="https://buy.stripe.com/aFa9AS1wccjg2eJ2q1aVa00" class="btn-primary">Monatlich · 49 €</a>
-          <a href="https://buy.stripe.com/bJeaEWb6MdnkbPjc0BaVa03" class="btn-secondary">Jährlich · 490 €</a>
-        </div>
-      </div>
       <div class="tier featured">
         <div class="tier-badge">Empfohlen</div>
-        <div class="tier-name">Professional</div>
+        <div class="tier-name">Einzelplatz</div>
+        <div class="tier-price">49 € <small>/ Monat</small></div>
+        <div class="tier-price-secondary">oder 490 € jährlich · zwei Monate sparen</div>
+        <div class="tier-tag">Voller Funktionsumfang für einen Berater.</div>
+        <ul>
+          <li>Strategie-Vergleich ETF vs. Fondspolice</li>
+          <li>57 Tarife von 26 Gesellschaften</li>
+          <li>Entnahmephase: Rente gegen Entnahmeplan, nach Steuern</li>
+          <li>Multi-Tarif-Vergleich in einem Lauf</li>
+          <li>PDF-Beratungsprotokoll mit IDD-Statusinformation</li>
+          <li>Stress-Test und Monte-Carlo</li>
+          <li>Unbegrenzt Mandanten und PDF-Exporte</li>
+        </ul>
+        <div class="tier-actions">
+          <a href="{{ site.download_url }}" class="btn-primary">14 Tage kostenlos testen</a>
+        </div>
+      </div>
+      <div class="tier">
+        <div class="tier-name">Team</div>
         <div class="tier-price">99 € <small>/ Monat</small></div>
         <div class="tier-price-secondary">oder 990 € jährlich · zwei Monate sparen</div>
-        <div class="tier-tag">Für Strukturvertriebe und Beratungsbüros.</div>
+        <div class="tier-tag">Für Beratungsbüros und Geschäftsstellen.</div>
         <ul>
-          <li>Alles aus Basis</li>
-          <li>Unbegrenzte Mandanten</li>
-          <li>Multi-Tarif-Vergleich in einem Lauf</li>
+          <li>Alles aus Einzelplatz</li>
+          <li>Bis zu fünf Berater in einem Account</li>
           <li>Eigenes Branding in PDF-Protokollen</li>
-          <li>Multi-Berater-Account</li>
+          <li>Gemeinsame Tarif-Verwaltung</li>
           <li>Prioritäts-Support</li>
         </ul>
         <div class="tier-actions">
-          <a href="https://buy.stripe.com/4gM28qb6M0Ay2eJd4FaVa01" class="btn-primary">Monatlich · 99 €</a>
-          <a href="https://buy.stripe.com/bJe6oGb6M6YW5qV8OpaVa02" class="btn-secondary">Jährlich · 990 €</a>
+          <a href="{{ site.download_url }}" class="btn-secondary">In der App wählen</a>
         </div>
       </div>
       <div class="tier founder">
         <div class="tier-badge tier-badge-amber">Limitiert</div>
         <div class="tier-name">Founder Member</div>
         <div class="tier-price">24,50 € <small>/ Monat</small></div>
-        <div class="tier-price-secondary">50 % Lebenslangrabatt auf Basis · nur erste 20 Berater</div>
+        <div class="tier-price-secondary">50 % Lebenslangrabatt auf Einzelplatz · nur erste 20 Berater</div>
         <div class="tier-tag">Für Anker-Berater der ersten Stunde.</div>
         <ul>
-          <li>Alle Funktionen aus Basis</li>
+          <li>Alle Funktionen aus Einzelplatz</li>
           <li>50 % Rabatt — lebenslang</li>
           <li>Direkter Draht zur Entwicklung</li>
           <li>Früher Zugang zu neuen Features</li>
           <li>Limitiert auf 20 Plätze</li>
         </ul>
-        <a href="mailto:nyko@patinasouthside.de?subject=Founder%20Member%20-%20Patina%20Charts" class="btn-secondary">Founder-Status anfragen</a>
+        <a href="mailto:nyko@patinasouthside.de?subject=Founder%20Member%20-%20Patina%20Charts" class="btn-secondary">Founder-Code anfragen</a>
       </div>
     </div>
     <div class="enterprise-banner">
@@ -173,7 +171,7 @@ layout: default
       <a href="mailto:nyko@patinasouthside.de?subject=Enterprise-Anfrage%20Patina%20Charts&body=Hallo%20Niklas%2C%0A%0Awir%20m%C3%B6chten%20Patina%20Charts%20f%C3%BCr%20eine%20Gesch%C3%A4ftsstelle%20%2F%20einen%20Strukturvertrieb%20einsetzen.%0A%0AGesellschaft%3A%20%0AAnzahl%20Berater%3A%20%0AAktuelles%20Beratungs-Tool%3A%20%0AWunschtermin%20f%C3%BCr%20Demo%3A%20%0A%0AViele%20Gr%C3%BC%C3%9Fe" class="btn-primary">Enterprise-Demo anfragen</a>
     </div>
 
-    <p class="pricing-note">Lieber erst risikofrei testen? <a href="{{ site.download_url }}">14 Tage über Apple TestFlight starten</a> — kein Zahlungsmittel, kein Stripe-Konto. Kündigung jederzeit zum Ende der laufenden Abrechnungsperiode möglich.</p>
+    <p class="pricing-note">Abo und Zahlung laufen über deine Apple-ID im App Store. Die ersten vierzehn Tage sind kostenlos; wird in dieser Zeit gekündigt, entstehen keine Kosten. Kündigung danach jederzeit zum Ende der laufenden Abrechnungsperiode direkt in den App-Store-Einstellungen.</p>
   </div>
 </section>
 
@@ -221,10 +219,10 @@ layout: default
 <section class="section section-narrow">
   <div class="cta-banner">
     <h2>Im nächsten Termin loslegen.</h2>
-    <p>Direkt-Abo über Stripe, sofort einsatzbereit auf dem iPad. Oder vorher 14 Tage über Apple TestFlight prüfen.</p>
+    <p>Im App Store laden, in der App 14 Tage kostenlos testen — sofort einsatzbereit auf dem iPad.</p>
     <div class="cta-banner-actions">
-      <a href="#preise" class="btn-primary">Tarif wählen</a>
-      <a href="{{ site.download_url }}" class="btn-secondary btn-secondary-on-dark">TestFlight starten</a>
+      <a href="{{ site.download_url }}" class="btn-primary">Im App Store laden</a>
+      <a href="#preise" class="btn-secondary btn-secondary-on-dark">Tarife ansehen</a>
     </div>
   </div>
 </section>
