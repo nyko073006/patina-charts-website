@@ -10,7 +10,7 @@ last_modified: 2026-07-23
   <div class="hero-inner">
     <div class="eyebrow">iPad-Beratungstool für Vermittler</div>
     <h1>Im Beratungstermin den Vergleich gewinnen.</h1>
-    <p class="lead">Patina Charts vergleicht ETF-Sparpläne mit fondsgebundenen Rentenversicherungen — vor Steuer, nach Steuer, mit Halbeinkünfteverfahren und Vorabpauschale. Über 30 deutsche Tarife sind hinterlegt. Drei Eingaben vom Mandanten, neunzig Sekunden, IDD-konforme PDF im Mail-Entwurf.</p>
+    <p class="lead">Patina Charts vergleicht ETF-Sparpläne mit fondsgebundenen Rentenversicherungen — vor Steuer, nach Steuer, mit Halbeinkünfteverfahren und Vorabpauschale. 57 deutsche Tarife von 26 Gesellschaften sind hinterlegt. Drei Eingaben vom Mandanten, neunzig Sekunden, IDD-konforme PDF im Mail-Entwurf.</p>
     <div class="hero-actions">
       <a href="#preise" class="btn-primary">Tarife ansehen</a>
       <a href="#funktionen" class="btn-secondary">Funktionen entdecken</a>
@@ -60,8 +60,8 @@ last_modified: 2026-07-23
       </div>
       <div class="feature">
         <div class="feature-icon">DB</div>
-        <h3>30+ deutsche Tarife</h3>
-        <p>Allianz, Swiss Life, AXA, Continentale, ergo, Helvetia, WWK und 24 weitere. Werte aus echten Produktinformationsblättern, regelmäßig aktualisiert.</p>
+        <h3>57 Tarife, 26 Gesellschaften</h3>
+        <p>Über 30 davon namentlich und voll durchgerechnet — Allianz, Swiss Life, AXA, Continentale, ergo, Helvetia, WWK und weitere. Werte aus echten Produktinformationsblättern, regelmäßig aktualisiert.</p>
       </div>
       <div class="feature">
         <div class="feature-icon">⌂</div>

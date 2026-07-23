@@ -39,8 +39,8 @@ und macht die Annahmen sichtbar, statt sie zu verstecken.
 Die Mandantin fragt: „Lohnt sich die Police gegenüber einem ETF-Sparplan?" Sie brauchen darauf
 eine Antwort, die **nachvollziehbar** und **dokumentierbar** ist — nicht eine Bauchmarke und
 nicht die geschönte Modellrechnung eines einzelnen Anbieters. Drei Eingaben (Sparrate,
-Sparhorizont, Steuerprofil) genügen für die erste Gegenüberstellung; Tarife wählen Sie aus über
-30 hinterlegten deutschen Produkten.
+Sparhorizont, Steuerprofil) genügen für die erste Gegenüberstellung; Tarife wählen Sie aus 57
+hinterlegten deutschen Produkten von 26 Gesellschaften.
 
 ## Was modelliert der Rechner nach Steuern?
 
@@ -71,8 +71,8 @@ dokumentierbar, damit **Sie** begründet beraten.
 
 ## Was unterscheidet Patina Charts von anderen Tools?
 
-- **Über 30 reale, namentliche deutsche Tarife** — Werte aus öffentlichen
-  Produktinformationsblättern, nicht generische Modellannahmen.
+- **Über 30 namentliche deutsche Tarife** (von 57 hinterlegten, 26 Gesellschaften) — Werte aus
+  öffentlichen Produktinformationsblättern, nicht generische Modellannahmen.
 - **iPad-nativ** für den persönlichen Termin — Live-Gegenüberstellung auf einem Bildschirm.
 - **Datenschutz im Vertrieb:** Mandantendaten bleiben lokal auf dem Gerät (SwiftData), kein
   Cloud-Zwang, in der Regel **kein Auftragsverarbeitungsvertrag** für Mandantendaten nötig.
