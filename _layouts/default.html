@@ -33,6 +33,10 @@
 <link rel="preload" href="{{ '/assets/fonts/newsreader-600.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/fonts/inter-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/fonts/inter-500.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+{% if page.home %}
+<link rel="preload" as="image" href="{{ '/assets/hero-bg.jpg' | relative_url }}" fetchpriority="high" media="(min-width: 641px)">
+<link rel="preload" as="image" href="{{ '/assets/hero-bg-mobile.jpg' | relative_url }}" fetchpriority="high" media="(max-width: 640px)">
+{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <script type="application/ld+json">
 {
@@ -139,16 +143,8 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
     els.forEach(function(el){ io.observe(el); });
-
-    // Hero load-in
-    var heroItems = document.querySelectorAll('.hero .eyebrow, .hero h1, .hero .lead, .hero-actions, .trust-row');
-    heroItems.forEach(function(el, i){
-      el.classList.add('hero-anim');
-      el.style.transitionDelay = (i * 90) + 'ms';
-    });
-    requestAnimationFrame(function(){
-      document.body.classList.add('hero-ready');
-    });
+    // Hero entrance is CSS-only (see .hero entrance rules) so above-the-fold
+    // text paints immediately and is never gated behind JS execution.
   });
 })();
 </script>
