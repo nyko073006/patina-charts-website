@@ -3,6 +3,7 @@ title: Patina Charts – ETF gegen Fondspolice für Vermittler
 description: iPad-Beratungstool für Versicherungs- und Finanzvermittler. ETF vs. Fondspolice live im Termin vergleichen, IDD-konforme PDF in 90 Sekunden.
 home: true
 layout: default
+last_modified: 2026-07-23
 ---
 
 <section class="hero">
@@ -29,7 +30,10 @@ layout: default
 <section class="device-section">
   <div class="device-mockup float-in">
     <div class="device-screen">
-      <img src="{{ '/assets/screenshots/login.jpg?v=2' | relative_url }}" alt="Patina Charts Login-Ansicht auf dem iPad Pro 13″ mit Live-Vergleichs-Chart ETF gegen Fondspolice" loading="lazy" width="1600" height="1200">
+      <picture>
+        <source srcset="{{ '/assets/screenshots/login.webp?v=2' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/screenshots/login.jpg?v=2' | relative_url }}" alt="Patina Charts Login-Ansicht auf dem iPad Pro 13″ mit Live-Vergleichs-Chart ETF gegen Fondspolice" loading="lazy" width="1600" height="1200">
+      </picture>
     </div>
   </div>
 </section>
@@ -42,7 +46,7 @@ layout: default
       <div class="feature">
         <div class="feature-icon">€</div>
         <h3>ETF vs. Fondspolice — live</h3>
-        <p>Halbeinkünfteverfahren bei Auszahlung, Vorabpauschale auf den ETF, Tax-Drag durch Rebalancing. Mit echten deutschen Steuersätzen, nicht generischen Annahmen.</p>
+        <p>Halbeinkünfteverfahren bei Auszahlung, Vorabpauschale auf den ETF, Tax-Drag durch Rebalancing. Mit echten deutschen Steuersätzen, nicht generischen Annahmen. <a href="{{ '/funktionen/fondspolice-etf-vergleich/' | relative_url }}">Wie der ETF-vs-Fondspolice-Vergleich rechnet →</a></p>
       </div>
       <div class="feature">
         <div class="feature-icon">PDF</div>

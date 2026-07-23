@@ -1,7 +1,9 @@
 ---
 title: Support — Patina Charts
+description: Support für Patina Charts — Hilfe zu Lizenzaktivierung, Abo, Onboarding und der iPad-App für den ETF-gegen-Fondspolice-Vergleich im Beratungstermin.
 layout: default
 permalink: /support/
+last_modified: 2026-05-12
 ---
 
 # Support

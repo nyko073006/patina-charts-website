@@ -34,8 +34,8 @@
 <link rel="preload" href="{{ '/assets/fonts/inter-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/fonts/inter-500.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 {% if page.home %}
-<link rel="preload" as="image" href="{{ '/assets/hero-bg.jpg' | relative_url }}" fetchpriority="high" media="(min-width: 641px)">
-<link rel="preload" as="image" href="{{ '/assets/hero-bg-mobile.jpg' | relative_url }}" fetchpriority="high" media="(max-width: 640px)">
+<link rel="preload" as="image" type="image/webp" href="{{ '/assets/hero-bg.webp' | relative_url }}" fetchpriority="high" media="(min-width: 641px)">
+<link rel="preload" as="image" type="image/webp" href="{{ '/assets/hero-bg-mobile.webp' | relative_url }}" fetchpriority="high" media="(max-width: 640px)">
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <script type="application/ld+json">
@@ -54,7 +54,8 @@
         "height": 512
       },
       "email": "nyko@patinasouthside.de",
-      "founder": { "@type": "Person", "name": "Niklas Julian Humplik" },
+      "sameAs": [ {{ site.download_url | jsonify }} ],
+      "founder": { "@type": "Person", "name": "Niklas Julian Humplik", "jobTitle": "Gründer & Entwickler" },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Giengen an der Brenz",
@@ -90,9 +91,9 @@
   "offers": {
     "@type": "AggregateOffer",
     "priceCurrency": "EUR",
-    "lowPrice": "49",
-    "highPrice": "99",
-    "offerCount": "3",
+    "lowPrice": 49,
+    "highPrice": 99,
+    "offerCount": 3,
     "availability": "https://schema.org/InStock"
   }
 }
@@ -148,6 +149,26 @@
   });
 })();
 </script>
+<script>
+// Mobile nav toggle — runs regardless of reduced-motion preference.
+(function(){
+  document.addEventListener('DOMContentLoaded', function(){
+    var header = document.querySelector('.site-header');
+    var toggle = header && header.querySelector('.nav-toggle');
+    if (!header || !toggle) return;
+    toggle.addEventListener('click', function(){
+      var open = header.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    header.querySelectorAll('.primary-nav a').forEach(function(a){
+      a.addEventListener('click', function(){
+        header.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  });
+})();
+</script>
 </head>
 <body class="{% if page.home %}home{% else %}page{% endif %}">
 
@@ -164,16 +185,20 @@
       </svg>
       <span>Patina&nbsp;Charts</span>
     </a>
-    <nav class="primary-nav">
+    <nav class="primary-nav" id="primary-nav">
       <a href="{{ '/' | relative_url }}#funktionen">Funktionen</a>
       <a href="{{ '/' | relative_url }}#preise">Preise</a>
       <a href="{{ '/' | relative_url }}#datenschutz">Datenschutz</a>
       <a href="{{ '/' | relative_url }}#faq">FAQ</a>
+      <a href="{{ site.download_url }}" class="nav-mobile-only">Im App Store</a>
     </nav>
     <div class="nav-cta-group">
       <a href="{{ site.download_url }}" class="nav-link-secondary">Im App Store</a>
       <a href="{{ '/' | relative_url }}#preise" class="nav-cta">Tarife ansehen</a>
     </div>
+    <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 

@@ -1,7 +1,9 @@
 ---
 title: Impressum — Patina Charts
+description: "Impressum von Patina Charts — Anbieterkennzeichnung nach § 5 DDG: Betreiber, Anschrift und Kontakt für das iPad-Beratungstool ETF gegen Fondspolice."
 layout: default
 permalink: /impressum/
+last_modified: 2026-05-12
 ---
 
 # Impressum

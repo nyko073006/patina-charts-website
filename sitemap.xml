@@ -3,40 +3,32 @@ layout: null
 permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  lastmod is sourced from each page's `last_modified` front matter (a real
+  content-edit date, NOT the build timestamp). Bump it when you edit a page.
+  priority/changefreq are intentionally omitted — Google ignores both.
+{%- endcomment -%}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.html_pages -%}
+{%- unless p.noindex or p.sitemap == false or p.url contains "404" -%}
   <url>
-    <loc>https://patinacharts.de/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://patinacharts.de{{ p.url }}</loc>
+    {%- if p.last_modified %}
+    <lastmod>{{ p.last_modified | date: "%Y-%m-%d" }}</lastmod>
+    {%- endif %}
   </url>
-  <url>
-    <loc>https://patinacharts.de/impressum/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://patinacharts.de/privacy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://patinacharts.de/agb/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://patinacharts.de/support/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+{%- endunless -%}
+{%- endfor -%}
 {%- assign content_docs = site.funktionen | concat: site.ratgeber -%}
 {%- for doc in content_docs -%}
 {%- unless doc.noindex or doc.sitemap == false -%}
   <url>
     <loc>https://patinacharts.de{{ doc.url }}</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    {%- assign lm = doc.last_modified | default: doc.dateModified | default: doc.date -%}
+    {%- if lm %}
+    <lastmod>{{ lm | date: "%Y-%m-%d" }}</lastmod>
+    {%- endif %}
   </url>
-{% endunless -%}
+{%- endunless -%}
 {%- endfor %}
 </urlset>

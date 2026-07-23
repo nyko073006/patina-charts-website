@@ -4,6 +4,10 @@ permalink: /robots.txt
 ---
 User-agent: *
 Allow: /
-Disallow: /aktivierung-erfolgreich/
+
+# /aktivierung-erfolgreich/ is intentionally kept out of the index via a
+# per-page <meta name="robots" content="noindex, nofollow">. It is deliberately
+# NOT disallowed here so Googlebot can crawl it and honor the noindex tag —
+# a robots.txt Disallow would block the crawl and leave the noindex unseen.
 
 Sitemap: https://patinacharts.de/sitemap.xml

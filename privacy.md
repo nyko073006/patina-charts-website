@@ -1,7 +1,9 @@
 ---
 title: Datenschutzerklärung — Patina Charts
+description: Datenschutz bei Patina Charts — welche Daten die iPad-App verarbeitet, lokale Speicherung via SwiftData, optionaler Team-Sync und deine Rechte nach DSGVO.
 layout: default
 permalink: /privacy/
+last_modified: 2026-07-19
 ---
 
 # Datenschutzerklärung

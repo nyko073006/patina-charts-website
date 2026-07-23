@@ -38,6 +38,7 @@ defaults:
 exclude:
   - REDESIGN.md
   - README.md
+  - SEO-NEXT-STEPS.md
   - assets/Businessplan_PatinaCharts.docx
   - Gemfile
   - Gemfile.lock

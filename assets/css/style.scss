@@ -257,10 +257,63 @@ body {
 }
 .nav-cta:hover { background-color: var(--accent-deep); transform: translateY(-1px); }
 
+/* Hamburger toggle — hidden on desktop, shown below 760px */
+.nav-toggle {
+  display: none;
+  margin-left: 0.4rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--on-dark);
+  border-radius: 2px;
+  transition: transform 0.22s ease, opacity 0.18s ease;
+}
+.site-header.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.site-header.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+.site-header.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.nav-mobile-only { display: none; }
+
 @media (max-width: 760px) {
-  .primary-nav { display: none; }
   .site-header-inner { padding: 0.75rem 1.1rem; gap: 0.5rem; }
+  .nav-toggle { display: flex; }
   .nav-link-secondary { display: none; }
+  /* Primary nav becomes a dropdown panel toggled by the hamburger */
+  .primary-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0.4rem 1.1rem 1rem;
+    background-color: var(--header-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: saturate(150%) blur(16px);
+    backdrop-filter: saturate(150%) blur(16px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+  }
+  .site-header.nav-open .primary-nav { display: flex; }
+  .primary-nav a {
+    padding: 0.85rem 0.2rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .primary-nav a:last-child { border-bottom: 0; }
+  .nav-mobile-only { display: block; }
 }
 
 /* ===== Section base ===== */
@@ -291,7 +344,12 @@ body {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: url("/assets/hero-bg.jpg") center 62% / cover no-repeat;
+  background-position: center 62%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/hero-bg.jpg");
+  background-image: -webkit-image-set(url("/assets/hero-bg.webp") type("image/webp"), url("/assets/hero-bg.jpg") type("image/jpeg"));
+  background-image: image-set(url("/assets/hero-bg.webp") type("image/webp"), url("/assets/hero-bg.jpg") type("image/jpeg"));
 }
 
 .hero::after {
@@ -305,7 +363,12 @@ body {
 }
 
 @media (max-width: 640px) {
-  .hero::before { background-image: url("/assets/hero-bg-mobile.jpg"); background-position: center 55%; }
+  .hero::before {
+    background-position: center 55%;
+    background-image: url("/assets/hero-bg-mobile.jpg");
+    background-image: -webkit-image-set(url("/assets/hero-bg-mobile.webp") type("image/webp"), url("/assets/hero-bg-mobile.jpg") type("image/jpeg"));
+    background-image: image-set(url("/assets/hero-bg-mobile.webp") type("image/webp"), url("/assets/hero-bg-mobile.jpg") type("image/jpeg"));
+  }
 }
 
 .hero-inner { max-width: 860px; margin: 0 auto; }
@@ -956,9 +1019,12 @@ body.page p { margin: 0 0 1.1rem; line-height: 1.7; color: var(--ink); overflow-
 body.page ul, body.page ol { margin: 0 0 1.2rem; padding-left: 1.4em; }
 body.page li { margin-bottom: 0.35em; line-height: 1.65; overflow-wrap: break-word; hyphens: auto; }
 
-body.page a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
-body.page a:hover { color: var(--accent); }
-@media (prefers-color-scheme: dark) { body.page a { color: var(--accent); } }
+/* Scope content-link styling to <main> so header/footer nav on inner pages
+   is NOT overridden (body.page a used to beat .primary-nav a on specificity,
+   which rendered the nav as green underlined links). */
+body.page main a { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
+body.page main a:hover { color: var(--accent); }
+@media (prefers-color-scheme: dark) { body.page main a { color: var(--accent); } }
 
 body.page hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0; }
 

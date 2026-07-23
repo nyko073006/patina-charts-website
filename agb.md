@@ -3,6 +3,7 @@ title: Allgemeine Geschäftsbedingungen — Patina Charts
 description: AGB für die Patina-Charts-iOS-App und das zugehörige Abonnement.
 layout: default
 permalink: /agb/
+last_modified: 2026-07-22
 ---
 
 # Allgemeine Geschäftsbedingungen
