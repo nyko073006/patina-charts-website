@@ -15,6 +15,9 @@ download_subtext: "Im App Store laden – 14 Tage kostenlos, danach 49 € / Mon
 # "Verify" in the Console. Leave empty to omit the tag.
 google_site_verification: "INyHcy8YMGmn2aTkocJku6QPvZYNSAEghH5fRMGHhTw"
 
+# Bing Webmaster Tools — the content="..." value from the msvalidate.01 meta tag.
+bing_site_verification: "E3E6D91E3966EBC18CE06A41D867EACD"
+
 # ---- Content (Tier 3 SEO) ----
 # Two collections: /ratgeber/ (advisor guides) and /funktionen/ (product/feature pages).
 collections:

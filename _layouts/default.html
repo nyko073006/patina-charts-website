@@ -9,6 +9,7 @@
 {% unless page.noindex %}<link rel="canonical" href="https://patinacharts.de{{ page.url }}">{% endunless %}
 <meta name="author" content="Niklas Julian Humplik">
 {% if site.google_site_verification and site.google_site_verification != "" %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+{% if site.bing_site_verification and site.bing_site_verification != "" %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
 <meta name="theme-color" content="#10233B" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A1521" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
