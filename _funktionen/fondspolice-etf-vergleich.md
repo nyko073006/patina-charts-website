@@ -47,11 +47,12 @@ hinterlegten deutschen Produkten von 26 Gesellschaften.
 Der steuerliche Unterschied zwischen Depot und Versicherungsmantel ist der Kern des Vergleichs.
 Der Rechner bildet die relevanten Effekte beidseitig ab:
 
-- **ETF-Sparplan (Depot):** laufende **Vorabpauschale** in der Ansparphase, **Teilfreistellung**
-  für Aktienfonds und **Abgeltungsteuer** auf Veräußerungsgewinne.
+- **ETF-Sparplan (Depot):** laufende **[Vorabpauschale](/ratgeber/vorabpauschale/)** in der
+  Ansparphase, **[Teilfreistellung](/ratgeber/teilfreistellung/)** für Aktienfonds und
+  **Abgeltungsteuer** auf Veräußerungsgewinne.
 - **Fondsgebundene Rentenversicherung:** **Steuerstundung** im Mantel (keine jährliche
   Vorabpauschale während der Ansparphase), bei Kapitalauszahlung nach Vollendung des 62.
-  Lebensjahres und mindestens 12 Jahren Laufzeit das **Halbeinkünfteverfahren** (sog. 12/62-Regel)
+  Lebensjahres und mindestens 12 Jahren Laufzeit das **[Halbeinkünfteverfahren](/ratgeber/halbeinkuenfteverfahren-12-62-regel/)** (sog. 12/62-Regel)
   mit der für Versicherungen geltenden **Teilfreistellung**; bei Verrentung die
   Ertragsanteilsbesteuerung.
 - **Kostenseite:** Effektivkosten des jeweiligen Tarifs und der **Tax-Drag** eines Depots durch
